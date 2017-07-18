@@ -1,18 +1,73 @@
----
-layout: default
-navigation_weight: 1
-title: Home
----
+<!doctype html>
 
-{{ site.description }}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Home</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Home">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/">
+  <meta property="og:description" content="">
+  <meta property="og:site_name" content="">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="/">
+  <meta name="twitter:title" content="Home">
+  <meta name="twitter:description" content="">
+  
+  <link type="text/css" rel="stylesheet" href="/assets/main.css">
+   
+    <link rel="canonical" href="/">
+    <link rel="alternate" type="application/rss+xml" title="Traveller tips website!" href="/feed.xml">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+
+<body>
+   
+    <header class="page-header" role="banner">
+    <h1 class="project-name">Traveller tips website!</h1>
+    <nav class="main-nav">
+        <ul>
+        
+        
+            
+            <li>
+                <a href="/" class="btn active"> Home </a>
+            </li>
+            
+        
+            
+            <li>
+                <a href="/contact/" class="btn "> Contact </a>
+            </li>
+            
+        
+        </ul>
+    </nav>
+</header>
+
+    <main class="main-content" aria-label="Content" role="main">
+        Traveller tips website is a personal blog where I give some special hints and tips for travellers. I try to find most interesting places during my trips for good photo and video materials. If you are a traveller and what to find the most interesting and  sometimes hidden places around the Globe - this website is a great starting point.
+
 
 <h2>Recent posts:</h2>
 <ul>
-  {% for post in site.posts %}
+  
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="/hohenzollern/">Hohenzollern visit</a>
     </li>
-  {% endfor %}
+  
+    <li>
+      <a href="/jekyll/update/2017/06/27/welcome-to-jekyll/">Welcome to Jekyll!</a>
+    </li>
+  
 </ul>
 
 
@@ -20,29 +75,63 @@ title: Home
 
 <!--
 <ul class="tags">
-{% for tag in site.tags %}
-  {% assign t = tag | first %}
-  {% assign posts = tag | last %}
-  <li>{{t | downcase | replace:" ","-" }} has {{ posts | size }} posts</li>
-{% endfor %}
+
+  
+  
+  <li>hohenzollern has 1 posts</li>
+
+  
+  
+  <li>photospot has 1 posts</li>
+
 </ul>
 
-{% for tag in site.tags %}
-  {% assign t = tag | first %}
-  {% assign posts = tag | last %}
 
-{{ t | downcase }}
+  
+  
+
+hohenzollern
 <ul>
-{% for post in posts %}
-  {% if post.tags contains t %}
+
+  
   <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
+    <a href="/hohenzollern/">Hohenzollern visit</a>
+    <span class="date">July 7, 2017</span>
   </li>
-  {% endif %}
-{% endfor %}
+  
+
 </ul>
-{% endfor %}
+
+  
+  
+
+photospot
+<ul>
+
+  
+  <li>
+    <a href="/hohenzollern/">Hohenzollern visit</a>
+    <span class="date">July 7, 2017</span>
+  </li>
+  
+
+</ul>
+
 
 
 -->
+    </main>
+    
+    <footer class="site-footer">
+
+</footer>
+
+
+    
+<script type="text/javascript" src="/assets/main.js"></script>
+
+
+
+    
+</body>
+</html>
