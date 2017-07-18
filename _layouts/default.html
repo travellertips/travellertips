@@ -1,19 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
 {% include head.html %}
- 
+
 <body>
+   
     {% include header.html %}
 
-    <section class="main-content" aria-label="Content">
+    <main class="main-content" aria-label="Content" role="main">
         {{ content }}
-    </section>
+    </main>
     
     {% include footer.html %}
+
+    {% include javascripts.html %}
     
-    {% if site.google_analytics %}
-        {% include google-analytics.html %}
-    {% endif %}
-  </body>
+</body>
 </html>
