@@ -4,8 +4,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Traveller tips website is a personal blog where I give some special hints and tips for travellers.
   I try to find most interesting places during my trips for good photo and video materials. If you are a traveller and what to find the most interesting and 
   sometimes hidden places around the Globe - this website is a great starting point.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "travellertips.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://travellertips.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: polinovskyi
 
 # Build settings
