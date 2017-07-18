@@ -21,7 +21,7 @@ assets:
       js: false
   autowrite: true
   prefix: "/assets"
-  digest: true
+  digest: false
   assets:
     - "*.png"
     - "*.jpg"
