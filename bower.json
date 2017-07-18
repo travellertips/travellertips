@@ -1,6 +1,10 @@
 {
-  "name": "",
-  "dependencies": {
-    "jquery": "~3.2.1"
-  }
+  "name": "travellertips",
+  "authors": [
+    "Grygorii Polinovskyi <polinovskyi.g@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": ""
 }
