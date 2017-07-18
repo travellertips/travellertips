@@ -19,12 +19,20 @@ assets:
   compress:
       css: false
       js: false
+  autowrite: true
+  prefix: "/assets"
+  digest: true
+  assets:
+    - "*.png"
+    - "*.jpg"
   features:
     automatic_img_size: false
   sources:
     - _assets/bower
     - _assets/fonts
-    - _assets/img
+    - _assets/images
+    - _assets/images/general
+    - _assets/images/posts
     - _assets/css
     - _assets/js
   autoprefixer:

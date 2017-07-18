@@ -4,7 +4,8 @@
 .page-header {
   color: $header-heading-color;
   text-align: center;
-  background: url('/assets/img/general/background.jpg') no-repeat;
+  background:  url(asset_path('general/background.jpg'));
+ // background: url("/assets/general/background.jpg") no-repeat;
   background-size: 100% auto;
   background-position: center;
 
