@@ -4,22 +4,25 @@
 .page-header {
   color: $header-heading-color;
   text-align: center;
+  min-height: 200px;
   background:  url(asset_path('general/background.jpg'));
  // background: url("/assets/general/background.jpg") no-repeat;
   background-size: 100% auto;
   background-position: center;
 
+/*
   @include large {
-    padding: 5rem 6rem;
+    padding: 5rem 0;
   }
 
   @include medium {
-    padding: 3rem 4rem;
+    padding: 3rem 0;
   }
 
   @include small {
-    padding: 2rem 1rem;
+    padding: 2rem 0;
   }
+*/
 }
 
 .project-name {
