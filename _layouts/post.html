@@ -1,24 +1,41 @@
----
-layout: default
----
+<!doctype html>
+
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{% include head.html %}
+
+<body>
    
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    {% include header-inner.html %}
 
-    <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-        <p class="post-meta">
-            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-                {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-                {{ page.date | date: date_format }}
-            </time>
-        </p>
-    </header>
+    <main class="main-content" aria-label="Content" role="main">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-    <div class="post-content" itemprop="articleBody">
-        {{ content }}
-    </div>
+            <header class="post-header">
+                <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+                <p class="post-meta">
+                    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                        {{ page.date | date: date_format }}
+                    </time>
+                </p>
+            </header>
 
-    {% if site.disqus.shortname %}
-        {% include disqus_comments.html %}
-    {% endif %}
-</article>
+            <div class="post-content" itemprop="articleBody">
+                {{ content }}
+            </div>
+
+            {% if site.disqus.shortname %}
+                {% include disqus_comments.html %}
+            {% endif %}
+        </article>
+    </main>
+    
+    {% include footer.html %}
+
+    {% include javascripts.html %}
+    
+</body>
+</html>
+
+   
