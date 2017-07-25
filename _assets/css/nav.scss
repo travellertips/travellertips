@@ -1,12 +1,20 @@
 .main-nav {
     background: #fff;
+    
     ul {
         margin: 0;
         padding: 0;
         
         li {
             display: inline-block;
+            margin-left: 25px;
         }
+    }
+    
+    a {
+        color: $main-nav-color;
+        font-size: 24px;
+        cursor: pointer;
     }
     
     .btn {
