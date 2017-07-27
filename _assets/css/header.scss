@@ -3,8 +3,7 @@
 
 %sprite {
     background: url(asset_path('sprite.svg'));
-    background-repeat: no-repeat;
-    background-position: 0 0;  
+    background-repeat: no-repeat;  
 }
 
 .page-top-header {
@@ -33,7 +32,7 @@
 .gallery-header {
     background: url(asset_path('background2.jpg')) no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     min-height: 94vh;
     display: flex;
     margin-bottom: 80px;
@@ -43,6 +42,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+    position: absolute;
+    top: calc(50% - 85px);
+    left: 10%;
     
     a {
         display: inline-block;

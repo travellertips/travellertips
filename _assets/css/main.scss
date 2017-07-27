@@ -30,6 +30,14 @@ a {
   }
 }
 
+/* ============== HEADER ==============*/
+@import "header";
+/* =========== // HEADER ==============*/
+
+/* ============== NAVIGATION ==============*/
+@import "nav";
+/* =========== // NAVIGATION ==============*/
+
 .gmap_canvas img {
     max-width:none!important;
     background:none!important
@@ -51,27 +59,21 @@ a {
     position: relative;
     
     &::after {
-        content: "✓";
-        color: $main-color;
-        font-size: 3em;
+        content: "";
+        display: block;
+        width: 20px;
+        height: 86px;
+        @extend %sprite;
+        background-position: -88px -62px;
         position: absolute;
-        top: 0;
-        left: 18px;
+        top: 22px;
+        left: 24px;
     }
     
     p:last-child {
         margin: 0;
     }
 }
-
-
-/* ============== HEADER ==============*/
-@import "header";
-/* =========== // HEADER ==============*/
-
-/* ============== NAVIGATION ==============*/
-@import "nav";
-/* =========== // NAVIGATION ==============*/
 
 .btn {
   display: inline-block;
