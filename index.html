@@ -6,13 +6,15 @@ title: Home
 
 <h2>Recent posts:</h2>
 <ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
+    {% for post in site.posts %}
+        <li>
+            {% if post.thumbnail %}
+                <img src="{% asset_path {{post.thumbnail}} %}" alt="{{post.title}}" />
+            {% endif %}
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+    {% endfor %}
 </ul>
-
 
 <hr>
 

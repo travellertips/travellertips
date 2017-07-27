@@ -11,7 +11,7 @@ group :jekyll_plugins do
     gem "html-proofer"
     gem "jekyll-assets"
     gem "jekyll-sitemap"
-    gem "mini_magick"
+#    gem "mini_magick"
     gem "uglifier"
 end
 

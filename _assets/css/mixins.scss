@@ -17,3 +17,22 @@
     @content;
   }
 }
+
+@mixin container {
+    @include large {
+        max-width: $huge-breakpoint;
+        padding: 2rem 4rem;
+        margin: 0 auto;
+        font-size: 1.1rem;
+    }
+
+    @include medium {
+        padding: 2rem 2.5rem;
+        font-size: 1.1rem;
+    }
+
+    @include small {
+        padding: 2rem 1rem;
+        font-size: 1rem;
+    }
+}

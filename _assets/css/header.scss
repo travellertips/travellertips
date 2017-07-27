@@ -12,25 +12,15 @@
 }
 
 .header-wrapper {
-    max-width: $large-breakpoint;
+    
+    @include container;
+    
     height: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     
-    
-    @include large {
-        padding: 0 4rem;
-    }
-
-    @include medium {
-        padding: 0 2.5rem;
-    }
-
-    @include small {
-        padding: 0 1rem;
-    }
 }
 
 .logo {
@@ -47,6 +37,34 @@
     min-height: 94vh;
     display: flex;
     margin-bottom: 80px;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    a {
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        margin: 0.5em 0;
+    }
+}
+
+.instagram {
+    @extend %sprite;
+    background-position: -13px -130px;
+}
+
+.twitter {
+    @extend %sprite;
+    background-position: -13px -185px;    
+}
+
+.linkedin {
+    @extend %sprite;
+    background-position: -13px -249px;    
 }
 
 .site-description {
@@ -68,18 +86,3 @@
         max-width: 50rem;
     }
 }
-
-
-/*
-  @include large {
-    padding: 5rem 0;
-  }
-
-  @include medium {
-    padding: 3rem 0;
-  }
-
-  @include small {
-    padding: 2rem 0;
-  }
-*/

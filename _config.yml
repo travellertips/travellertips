@@ -25,6 +25,7 @@ assets:
   assets:
     - "*.png"
     - "*.jpg"
+    - "*.svg"
   features:
     automatic_img_size: false
   sources:
@@ -33,6 +34,7 @@ assets:
     - _assets/images
     - _assets/images/general
     - _assets/images/posts
+    - _assets/images/thumbnails
     - _assets/css
     - _assets/js
   autoprefixer:
