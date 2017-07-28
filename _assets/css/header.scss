@@ -33,7 +33,7 @@
     background: url(asset_path('background2.jpg')) no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 94vh;
+    min-height: calc(100vh - 80px);
     display: flex;
     margin-bottom: 80px;
 }
@@ -77,15 +77,15 @@
     margin: 0 auto -60px;
     padding: 1.5em 2em;
     
-    @include large {
+    @include huge {
         max-width: 64rem;
     }
 
-    @include medium {
-        max-width: 50rem;
+    @include large {
+        max-width: 54rem;
     }
 
-    @include small {
+    @include medium {
         max-width: 50rem;
     }
 }

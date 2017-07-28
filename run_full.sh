@@ -10,9 +10,9 @@ OLD_STAT_FILE='../../../new_img_check.txt'
  
 if [ -e $OLD_STAT_FILE ]
     then
-            OLD_STAT=`cat $OLD_STAT_FILE`
+        OLD_STAT=`cat $OLD_STAT_FILE`
     else
-            OLD_STAT="nothing"
+        OLD_STAT="nothing"
 fi
  
 NEW_STAT=`find $DIR_TO_CHECK -type f -exec ls -l {} \; | awk '{sum += $5} END {print sum}' `
@@ -41,7 +41,8 @@ then
     ### rename thumbnails files
     for file in *
     do
-        mv "$file" "${file%.*}$thumb${file##*.}"
+        NAME=`echo "${file%.*}$thumb" | awk '{print tolower($0)}'`
+        mv "$file" "$NAME${file##*.}"
     done
 
     ### resize all thumbnails

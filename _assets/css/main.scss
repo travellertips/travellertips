@@ -97,16 +97,16 @@ a {
     margin-left: 1rem;
   }
 
-  @include large {
+  @include huge {
     padding: 0.75rem 1rem;
   }
 
-  @include medium {
+  @include large {
     padding: 0.6rem 0.9rem;
     font-size: 0.9rem;
   }
 
-  @include small {
+  @include medium {
     display: block;
     width: 100%;
     padding: 0.75rem;
@@ -261,6 +261,55 @@ a {
   }
 }
 
+.recent-posts {
+    
+    h1 {
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 50px;
+        line-height: 54px;
+    }
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        li {
+            width: 50%;
+            padding-right: 25px;
+            margin-bottom: 2em;
+            display: flex;
+            flex-flow: inherit;
+            
+            &:nth-child(2n) {
+                padding-right: 0;
+                padding-left: 25px;
+            }
+            
+            a {
+                align-self: flex-end;
+            }
+        }
+
+    }
+    
+}
+
+
 /* ============== FOOTER ==============*/
 @import "footer";
 /* ============== // FOOTER ==============*/
+
+
+
+
+
+
+
+

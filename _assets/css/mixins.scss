@@ -1,39 +1,38 @@
 @import "variables";
 
+@mixin huge {
+  @media screen and (min-width: #{$huge-breakpoint}) {
+    @content;
+  }
+}
+
 @mixin large {
-  @media screen and (min-width: #{$large-breakpoint}) {
+  @media screen and (min-width: #{$large-breakpoint}) and (max-width: #{$huge-breakpoint}) {
     @content;
   }
 }
 
 @mixin medium {
-  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
-    @content;
-  }
-}
-
-@mixin small {
   @media screen and (max-width: #{$medium-breakpoint}) {
     @content;
   }
 }
 
 @mixin container {
-    @include large {
+    @include huge {
         max-width: $huge-breakpoint;
         padding: 2rem 4rem;
         margin: 0 auto;
         font-size: 1.1rem;
     }
 
-    @include medium {
+    @include large {
         padding: 2rem 2.5rem;
         font-size: 1.1rem;
     }
 
-    @include small {
+    @include medium {
         padding: 2rem 1rem;
         font-size: 1rem;
     }
 }
-
