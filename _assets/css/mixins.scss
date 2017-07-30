@@ -20,7 +20,6 @@
 
 @mixin container {
     @include huge {
-        max-width: $huge-breakpoint;
         padding: 2rem 4rem;
         margin: 0 auto;
         font-size: 1.1rem;

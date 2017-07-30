@@ -53,6 +53,7 @@ a {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     padding: 1em 1em 1em 4em;
+    min-height: 8.5em;
     border: 1px solid $border-color;
     color: $tipp-text-color;
     background: $tipp-bg-color;
@@ -120,13 +121,19 @@ a {
 }
 
 .main-content {
-  word-wrap: break-word;
+    word-wrap: break-word;
+    margin: auto;
 
   :first-child {
     margin-top: 0;
   }
 
   @include container;
+  max-width: $huge-breakpoint;
+    
+    &.post {
+        max-width: $large-breakpoint;   
+    }
 
   img {
     max-width: 100%;
@@ -268,8 +275,21 @@ a {
     }
     
     h2 {
-        font-size: 50px;
-        line-height: 54px;
+        
+        @include huge {
+            font-size: 50px;
+            line-height: 54px;
+        }
+
+        @include large {
+            font-size: 42px;
+            line-height: 46px;
+        }
+
+        @include medium {
+            font-size: 34px;
+            line-height: 36px;
+        }
     }
     
     ul {
@@ -285,7 +305,7 @@ a {
             padding-right: 25px;
             margin-bottom: 2em;
             display: flex;
-            flex-flow: inherit;
+            flex-flow: column nowrap;
             
             &:nth-child(2n) {
                 padding-right: 0;
@@ -293,8 +313,15 @@ a {
             }
             
             a {
-                align-self: flex-end;
+                margin-top: auto;
+                color: $body-text-color;
+                
+                &:hover {
+                    color: $dark;
+                    text-decoration: none;
+                }
             }
+            
         }
 
     }
