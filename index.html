@@ -14,6 +14,11 @@ title: Home
                 {% if post.thumbnail %}
                     <a href="{{ post.url }}"><img src="{% asset_path {{post.thumbnail}} %}" alt="{{post.title}}" /></a>
                 {% endif %}
+                {% if post.date %}
+                    <time datetime="{{ post.date | date_to_long_string }}" itemprop="datePublished">
+                        {{ post.date | date_to_long_string }}
+                    </time>
+                {% endif %}
                 {% if post.summary %}
                     <p>
                         {{ post.summary }}
