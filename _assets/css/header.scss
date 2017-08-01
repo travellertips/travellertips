@@ -63,7 +63,7 @@
     background-size: cover;
     min-height: calc(100vh - 80px);
     display: flex;
-    margin-bottom: 80px;
+//    margin-bottom: 80px;
 }
 
 .social-buttons {
@@ -81,11 +81,11 @@
 
     @include medium {
         left: 2rem;
-        top: calc(50% - 200px); 
     }
     
     @include small {
         left: 1rem;
+        transform: scale(0.8);
     }    
     
     a {
@@ -114,9 +114,8 @@
 .site-description {
     background: #fff;
     font-size: $large-font-size;
-    align-self: flex-end;
-    margin: 0 auto -60px;
-    padding: 1.5em 2em;
+    margin: -16vh auto 0;
+    padding: 1.5em 2em 0;
     
     @include huge {
         max-width: 64rem;
@@ -128,5 +127,7 @@
 
     @include medium {
         max-width: 50rem;
+        font-size: 16px;
     }
+    
 }
