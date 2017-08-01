@@ -62,5 +62,5 @@ fi
 
 
 
-#jekyll build
-#bundle exec jekyll serve
+jekyll build
+bundle exec jekyll serve
