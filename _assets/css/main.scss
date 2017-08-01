@@ -282,8 +282,8 @@ a {
         }
 
         @include large {
-            font-size: 42px;
-            line-height: 46px;
+            font-size: 40px;
+            line-height: 44px;
         }
 
         @include medium {
@@ -307,9 +307,19 @@ a {
             display: flex;
             flex-flow: column nowrap;
             
+            @include medium {
+                width: 100%;
+                align-items: center;
+                padding: 0;
+            }
+            
             &:nth-child(2n) {
                 padding-right: 0;
                 padding-left: 25px;
+                
+                @include medium {
+                    padding: 0;
+                }
             }
             
             a {

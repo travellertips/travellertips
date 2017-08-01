@@ -13,25 +13,37 @@
 }
 
 @mixin medium {
+  @media screen and (max-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin small {
   @media screen and (max-width: #{$medium-breakpoint}) {
     @content;
   }
 }
 
+
 @mixin container {
     @include huge {
-        padding: 2rem 4rem;
+        padding: 2rem $side-padding-huge;
         margin: 0 auto;
         font-size: 1.1rem;
     }
 
     @include large {
-        padding: 2rem 2.5rem;
+        padding: 2rem $side-padding-large;
         font-size: 1.1rem;
     }
 
     @include medium {
-        padding: 2rem 1rem;
+        padding: 2rem $side-padding-medium;
+        font-size: 1rem;
+    }
+    
+    @include small {
+        padding: 2rem $side-padding-small;
         font-size: 1rem;
     }
 }
