@@ -1,0 +1,16 @@
+<div class="map">
+    <img src="{% asset_path {{include.img}} %}" alt="Map">
+    <div class="overlay"></div>
+    <div class="button-wrapper">
+        {% if {{include.mode}} and {{include.mode}} == "route" %}
+            <a class="button" href="{{include.url}}" target="_blank">
+                Open in Google maps    
+            </a>
+        {% else %}
+            <a class="button" href="https://www.google.com/maps/search/?api=1&query={{include.query}}&query_place_id={{include.place_id}}" target="_blank">
+                Open in Google maps    
+            </a>
+        {% endif %}      
+
+    </div>
+</div>

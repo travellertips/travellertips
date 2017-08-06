@@ -1,5 +1,9 @@
 #bash
 
+#cd _assets/images/posts/maps
+
+#mogrify -resize 1200x675 -gravity Center -crop 1200x675+0+0 +repage *.*
+
 cd _assets/images/posts
 
 ### Check if there any new images
@@ -35,7 +39,7 @@ then
 
     ### set all images for posts to a standard size
 
-    mogrify -strip -interlace Plane -gaussian-blur 0.05 -resize 1600x900 -unsharp 0x1 -quality 75 -density 72x72 -units pixelsperinch -gravity Center -crop 1600x900+0+0 +repage *.* 
+    mogrify -strip -interlace Plane -gaussian-blur 0.05 -resize 1200x675 -unsharp 0x1 -quality 75 -density 72x72 -units pixelsperinch -gravity Center -crop 1200x675+0+0 +repage *.* 
 
     rm -r thumbnails/*
 
@@ -54,13 +58,13 @@ then
     ### resize all thumbnails
     mogrify -strip -interlace Plane -gaussian-blur 0.02 -resize '650' -unsharp 0x1 -quality 85 -density 72x72 -units pixelsperinch -gravity Center -crop 650x365+0+0 +repage *.* 
     
-    cd ../../../../
+    cd ../
     
     echo $NEW_STAT > $OLD_STAT_FILE
 
 fi
 
-
+cd ../../../
 
 jekyll build
 bundle exec jekyll serve

@@ -35,6 +35,7 @@ assets:
     - _assets/images/general
     - _assets/images/posts
     - _assets/images/thumbnails
+    - _assets/images/maps
     - _assets/css
     - _assets/js
   autoprefixer:
