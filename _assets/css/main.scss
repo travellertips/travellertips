@@ -21,6 +21,10 @@ body {
     height: 0;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
 a {
   color: $body-link-color;
   text-decoration: none;
