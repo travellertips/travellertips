@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-02T11:39:08+01:00</updated><id>http://localhost:4000/</id><title type="html">Traveller tips website!</title><subtitle>Traveller tips website is a personal blog where I give some special hints and tips for travellers. I try to find most interesting places during my trips for good photo and video materials. If you are a traveller and what to find the most interesting and  sometimes hidden places around the Globe - this website is a great starting point.
+</subtitle><entry><title type="html">Visit the exclusion zone long name here</title><link href="http://localhost:4000/zone/" rel="alternate" type="text/html" title="Visit the exclusion zone long name here" /><published>2017-07-28T00:00:00+02:00</published><updated>2017-07-28T00:00:00+02:00</updated><id>http://localhost:4000/zone</id><content type="html" xml:base="http://localhost:4000/zone/">&lt;script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAz8v3Ylh6Q2GQDVxSOWGFD_h_uiNfiE1k&amp;v=3.exp'&gt;&lt;/script&gt;
+
+&lt;p&gt;If you want to visit this great medieval castle, your start point should be Stuttgart. From there you should take the regional train to Hechingen. If you want a direct train, this could be IRE 3253 like in my case and you should plan it good, as it departures approximately every 2 hours. The ticket price was 19 EUR for me. You can check and book the tickets &lt;a href=&quot;http://reiseauskunft.bahn.de/bin/query2.exe/dn?ld=15073&amp;seqnr=2&amp;ident=6l.0190673.1497683751&amp;rt=1&amp;rememberSortType=minDeparture&amp;HWAI=JS!ajax=yes!js=yes!&amp;REQ0HafasScrollDir=2&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;section class=&quot;tipp&quot;&gt;
+    &lt;p&gt;Here is a first tipp lorem ipsum Here is a first tipp lorem ipsum Here is a first tipp lorem ipsum Here is a first tipp lorem ipsum Here is a first tipp lorem ipsum Here is a first tipp lorem ipsum Here is a first tipp lorem ipsum Here is a first tipp lorem ipsum Here is a first tipp lorem ipsum Here is a first tipp lorem ipsum &lt;/p&gt;
+&lt;/section&gt;
+
+&lt;p&gt;Hechingen is very quiet small town. If you go to the back of the station you can already see the castle on the hill. There are two ways to get the castle - shuttle bus (every hour) or a taxi (~15 EUR). In my case it was a taxi, as I had not much time and planned to visit another German castle. Taxi or shuttle bus drives you to the parking platform that is about 10 minutes from the castle. There you can use the toilet and find some snacks as well as the tourist information, tickets to the second shuttle to the castle. You have two options to go: by foot or by shuttle bus. I would recommend a bus, as you’re going to save some power to go to the view point ;) &lt;/p&gt;
+
+&lt;img src=&quot;/assets/posts/hohenzollern2.jpg&quot; alt=&quot;Inside Hohenzollern castle&quot; /&gt;
+
+&lt;p&gt;In the castle you’ll manage to buy tickets, you can eat at the restaurant in the castle, have a guided tour. It is very interesting in the castle itself. Also, if you're hungry, there is a nice small cafe in its territory - you can drink some coffee and look into the distant hills.&lt;/p&gt;
+
+&lt;p&gt; But afterwards you would want to go here:&lt;/p&gt;
+
+&lt;img src=&quot;/assets/posts/hohenzollern4.jpg&quot; alt=&quot;Hohenzollern castle view&quot; /&gt;
+
+&lt;p&gt;So, let’s go to a magnificent view!&lt;/p&gt;
+
+&lt;p&gt;When you go out the gates of the castle and start to go back by the shuttle’s road, in 200-300m you would see the small arrow sign pointing left off the road in the forest. You should follow the signs with Mariazell (first checkpoint of our route) or Zellerhorn (our destination point) wordings. If the weather is rainy or you go right after the rain - be prepared, the forest path is very slippery.&lt;/p&gt;
+
+&lt;p&gt;So, our first point is&lt;/p&gt;
+
+&lt;div class=&quot;location-address&quot;&gt;
+    Hechingen-Boll, Mariazell &lt;br&gt;
+    Unnamed Road, 72379 Hechingen
+&lt;/div&gt;
+
+&lt;div style='overflow:hidden;height:440px;'&gt;&lt;div id='gmap_canvas' class='gmap_canvas' style='height:440px;'&gt;&lt;/div&gt;&lt;/div&gt;&lt;script type='text/javascript'&gt;function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(48.3173308,8.980412600000022),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(48.3173308,8.980412600000022)});infowindow = new google.maps.InfoWindow({content:'&lt;strong&gt;Hechingen-Boll, Mariazell&lt;/strong&gt;&lt;br&gt;Unnamed Road, 72379 Hechingen&lt;br&gt;'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);&lt;/script&gt;
+
+&lt;p&gt;This is what you expect to see there:&lt;/p&gt;
+
+&lt;img src=&quot;/assets/posts/hohenzollern3.jpg&quot; alt=&quot;Mariazell Church&quot; /&gt;
+
+&lt;p&gt;After the church the path to Zellerhorn have noticeable incline to the top of the hill.&lt;/p&gt;
+
+&lt;p&gt;So our destination point is &lt;/p&gt;
+
+&lt;div class=&quot;location-address&quot;&gt;
+Zellerhornwiese &lt;br&gt;
+72461 Albstadt 
+&lt;/div&gt;
+
+&lt;div style='overflow:hidden;height:440px;'&gt;&lt;div id='gmap_canvas1' class='gmap_canvas' style='height:440px;'&gt;&lt;/div&gt;&lt;/div&gt;&lt;script type='text/javascript'&gt;function init_map1(){var myOptions = {zoom:15,center:new google.maps.LatLng(48.3113889,8.983333300000027),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas1'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(48.3113889,8.983333300000027)});infowindow = new google.maps.InfoWindow({content:'&lt;strong&gt;Zellerhornwiese&lt;/strong&gt;&lt;br&gt;72461 Albstadt&lt;br&gt;'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map1);&lt;/script&gt;
+
+&lt;p&gt;There you can relax and make great photos! &lt;/p&gt;
+
+&lt;p&gt;Few more viewpoints are available around as well, like &lt;/p&gt;
+
+&lt;div class=&quot;location-address&quot;&gt;
+    Aussichtspunkt Hohenzollernblick &lt;br&gt;
+    72379 Albstadt
+&lt;/div&gt;
+
+&lt;p&gt;So, to get the most prominent experience of the place, I would recommend this route&lt;/p&gt;
+
+&lt;div style='overflow:hidden;height:440px;'&gt;
+    &lt;div id='gmap_canvas2' class='gmap_canvas' style='height:440px;'&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script type='text/javascript'&gt;
+    function init_map2(){
+        
+        var point_A = {'placeId':'ChIJ9Z59XbEDmkcRL1pF2TBwziI'};
+        var point_B = {'placeId':'ChIJazDxRA0DmkcRA3_rhAPSmoE'};
+        var waypts = [{
+            location: {'placeId':'ChIJ5apUM6YDmkcRzwwm8OualSE'},
+            stopover: true
+        },
+        {
+            location: {'placeId':'ChIJhTyJzKYDmkcRgN0LsJ0d9to'},
+            stopover: true
+        }]
+        
+        var myOptions = {
+            zoom:15,
+            center:new google.maps.LatLng(48.3113889,8.983333300000027),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById('gmap_canvas2'), myOptions);
+        
+        var directionsDisplay = new google.maps.DirectionsRenderer({
+          map: map
+        });
+        
+        // Set destination, origin and travel mode.
+        var request = {
+          origin: point_A,
+          destination: point_B,
+          waypoints: waypts,
+          travelMode: 'WALKING'
+        };
+        
+        // Pass the directions request to the directions service.
+        var directionsService = new google.maps.DirectionsService();
+        directionsService.route(request, function(response, status) {
+          if (status == 'OK') {
+            // Display the route on the map.
+            directionsDisplay.setDirections(response);
+          }
+        });
+        
+    }
+    google.maps.event.addDomListener(window, 'load', init_map2);
+&lt;/script&gt;</content><author><name></name></author><category term="hohenzollern" /><category term="photospot" /><summary type="html"></summary></entry><entry><title type="html">Hohenzollern visit</title><link href="http://localhost:4000/hohenzollern/" rel="alternate" type="text/html" title="Hohenzollern visit" /><published>2017-07-07T00:00:00+02:00</published><updated>2017-07-07T00:00:00+02:00</updated><id>http://localhost:4000/hohenzollern</id><content type="html" xml:base="http://localhost:4000/hohenzollern/">&lt;div class=&quot;download-guide&quot;&gt;
+        &lt;a href=&quot;http://localhost:4000/downloads/hohenzollern_guide.pdf&quot; target=&quot;_blank&quot; class=&quot;button&quot;&gt;Download Pocket travelguide&lt;/a&gt;
+    &lt;/div&gt;
+  
+
+&lt;h2&gt;History of the Castle&lt;/h2&gt;
+
+&lt;p&gt;One of the most beautiful medieval castles of Germany is Hohenzollern Castle. The &lt;a href=&quot;http://www.burg-hohenzollern.com/castle-history.html&quot; tagret=&quot;_blank&quot;&gt;history&lt;/a&gt; of the 750 years-old castle is quite interesting. First mention about the place dates to the 11&lt;sup&gt;th&lt;/sup&gt; century. Before it was destroyed completely in 1423, the Castle had a very prominent value for the region. It was called &quot;Crown of all Castles in Swabia&quot;. The second Hohenzollern Castle that was more fortified and bigger started its life in 1454. During the Dark Ages it changed many owners and got ruined till the beginning of 19&lt;sup&gt;th&lt;/sup&gt; century.&lt;/p&gt;
+
+&lt;p&gt;From 1850 King Frederick William IV started reconstruction of the Castle. One of his ideas was to make this place habitant again, which is still the case till our days. Currently the castle is a private property of Hohenzollern dynasty.&lt;/p&gt;
+
+&lt;p&gt;The view of the castle is spectacular! Its gothic style reveals some unknown romantic feeling. The landscape around makes the place even more attractive to visit.&lt;/p&gt;
+
+&lt;img src=&quot;/assets/posts/hohenzollern_top.jpg&quot; alt=&quot;Hohenzollern castle view&quot; /&gt;
+
+&lt;h2&gt;How to get the place&lt;/h2&gt;
+
+&lt;section class=&quot;tipp&quot;&gt;
+    &lt;p&gt;If you want to visit this great place, your start point can be &lt;a href=&quot;https://en.wikipedia.org/wiki/Stuttgart&quot; target=&quot;_blank&quot;&gt;Stuttgart&lt;/a&gt;. From there you should take the regional train to Hechingen. You should plan your day in advance, as the direct regional train departures approximately every 2 hours. &lt;/p&gt;
+&lt;/section&gt;
+
+&lt;p&gt;Price for the train ticket from Stuttgart to Hechingen was 19 EUR for me. You can check and book the tickets &lt;a href=&quot;http://reiseauskunft.bahn.de/bin/query2.exe/dn?ld=15073&amp;seqnr=2&amp;ident=6l.0190673.1497683751&amp;rt=1&amp;rememberSortType=minDeparture&amp;HWAI=JS!ajax=yes!js=yes!&amp;REQ0HafasScrollDir=2&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Hechingen is very quiet small town and there is no problem to find the right direction. When you step out from the train, you can go to the back of the station &amp;mdash; from there you already see the castle on the hill. There are two ways to get the castle: shuttle bus (departures every hour from the bus station that is right near the railway station) or a taxi (~15 EUR). In my case it was a taxi, as I had not much time and planned to visit &lt;a href=&quot;https://www.instagram.com/p/BH7L30qgetc/?taken-by=polinovskyi&quot; target=&quot;_blank&quot;&gt;another German castle&lt;/a&gt; next morning. Another benefit to take a taxi &amp;mdash; is that you can ask driver to stop on the spot which is great for a nice photo. Taxi or shuttle bus drives you to the parking space that is about 10 minutes from the castle. There you can use the toilet and find some snacks as well as the tourist information. And yes, I am writting here about the toilet. Ha-ha. When you travel, sometimes it's a hell to find a &quot;rest place&quot;. There are two options to get the castle from parking: by foot or by castle shuttle bus. Ticket for the shuttle to the castle costs 2 EUR for an adult. I would recommend a bus, as you’re going to save some power to go to the view point ;) &lt;/p&gt;
+
+&lt;img src=&quot;/assets/posts/hohenzollern2.jpg&quot; alt=&quot;Inside Hohenzollern castle&quot; /&gt;
+
+&lt;p&gt;In the castle you can go for a guided tour or walk yourself. If you're hungry or desperately in the need of a cup of coffee, you can sit at small caffee on its territory and eat some snack there. It is quite interesting in the castle itself [ADD INTERRIOR INFO]. But the most mesmerizing there &amp;mdash; is the view that opens for you.&lt;/p&gt;
+
+&lt;p&gt;After getting around and buying a magnet for your fridge &amp;mdash; you might want to go here:&lt;/p&gt;
+
+&lt;img src=&quot;/assets/posts/hohenzollern4.jpg&quot; alt=&quot;Hohenzollern castle view&quot; /&gt;
+
+&lt;p&gt;So, let’s go to a magnificent view point!&lt;/p&gt;
+
+&lt;p&gt;When you go out from the castle's gates and start to go back by the shuttle’s road, in 200-300m you would see the small arrow sign pointing left off the road in the forest. You should follow the signs with &quot;Mariazell&quot; (first checkpoint of our route) or &quot;Zellerhorn&quot; (our destination point). If the weather is rainy or you go right after the rain &amp;mdash; be prepared, the forest path is very slippery.&lt;/p&gt;
+
+&lt;p&gt;So, our first point is&lt;/p&gt;
+
+&lt;div class=&quot;location-address&quot;&gt;
+    Hechingen-Boll, Mariazell &lt;br&gt;
+    Unnamed Road, 72379 Hechingen
+&lt;/div&gt;
+
+&lt;div class=&quot;map&quot;&gt;
+    &lt;img src=&quot;/assets/posts/maps/hohenzollern_mariazell.png&quot; alt=&quot;Map&quot;&gt;
+    &lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;button-wrapper&quot;&gt;
+        
+            &lt;a class=&quot;button&quot; href=&quot;https://www.google.com/maps/search/?api=1&amp;query=Hechingen-Boll%2C+Mariazell&amp;query_place_id=ChIJ5apUM6YDmkcRzwwm8OualSE&quot; target=&quot;_blank&quot;&gt;
+                Open in Google maps    
+            &lt;/a&gt;
+              
+
+    &lt;/div&gt;
+&lt;/div&gt; 
+
+&lt;p&gt;This is what you expect to see there:&lt;/p&gt;
+
+&lt;img src=&quot;/assets/posts/hohenzollern3.jpg&quot; alt=&quot;Mariazell Church&quot; /&gt;
+
+&lt;p&gt;After the church the path to Zellerhorn have noticeable incline to the top of the hill.&lt;/p&gt;
+
+&lt;p&gt;So our destination point is &lt;/p&gt;
+
+&lt;div class=&quot;location-address&quot;&gt;
+Zellerhornwiese &lt;br&gt;
+72461 Albstadt 
+&lt;/div&gt;
+
+&lt;div class=&quot;map&quot;&gt;
+    &lt;img src=&quot;/assets/posts/maps/hohenzollern_zellerhorn.png&quot; alt=&quot;Map&quot;&gt;
+    &lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;button-wrapper&quot;&gt;
+        
+            &lt;a class=&quot;button&quot; href=&quot;https://www.google.com/maps/search/?api=1&amp;query=zellernhornwiese&amp;query_place_id=ChIJhTyJzKYDmkcRgN0LsJ0d9to&quot; target=&quot;_blank&quot;&gt;
+                Open in Google maps    
+            &lt;/a&gt;
+              
+
+    &lt;/div&gt;
+&lt;/div&gt; 
+
+&lt;p&gt;There you can relax and make great photos! &lt;/p&gt;
+
+&lt;p&gt;Few more viewpoints are available around as well, like &lt;/p&gt;
+
+&lt;div class=&quot;location-address&quot;&gt;
+    Aussichtspunkt Hohenzollernblick &lt;br&gt;
+    72379 Albstadt
+&lt;/div&gt;
+
+&lt;p&gt;So, to get the most prominent experience of the place, I would recommend this route&lt;/p&gt;
+
+&lt;div class=&quot;map&quot;&gt;
+    &lt;img src=&quot;/assets/posts/maps/hohenzollern_zellerhorn.png&quot; alt=&quot;Map&quot;&gt;
+    &lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;button-wrapper&quot;&gt;
+        
+            &lt;a class=&quot;button&quot; href=&quot;https://www.google.com/maps/dir/?api=1&amp;origin=hohenzollern+castle&amp;origin_place_id=ChIJ9Z59XbEDmkcRL1pF2TBwziI&amp;waypoints=Hechingen-Boll%2C+Mariazell%7Czellernhornwiese&amp;waypoint_place_ids=ChIJ5apUM6YDmkcRzwwm8OualSE%7CChIJhTyJzKYDmkcRgN0LsJ0d9to&amp;destination=Aussichtspunkt+Hohenzollernblick&amp;destination_place_id=ChIJazDxRA0DmkcRA3_rhAPSmoE&amp;travelmode=walking&quot; target=&quot;_blank&quot;&gt;
+                Open in Google maps    
+            &lt;/a&gt;
+              
+
+    &lt;/div&gt;
+&lt;/div&gt; 
+
+&lt;section class=&quot;travellertips&quot;&gt;
+    &lt;h2&gt;Traveller tips&lt;/h2&gt;
+    
+    &lt;h3&gt;When is the best time to visit&lt;/h3&gt;
+    &lt;p&gt;If you want to have great photos of the place, I would recommend to go in autumn (because of colors) or in winter with snow.&lt;/p&gt;
+    
+    &lt;h3&gt;How you get the place&lt;/h3&gt;
+    &lt;p&gt;From Stuttgart, take regional train IRE (check the connection at &lt;a href=&quot;bahn.de&quot; target=&quot;_blank&quot;&gt;bahn.de&lt;/a&gt;). From Hechingen railway station take a shuttle bus (approx. every 2 hours) or taxi. You can use special tickets if you travel in group or want to visit Stuttgart region, like &lt;a href=&quot;https://www.metropolticket.de/&quot; target=&quot;_blank&quot;&gt;metropolticket.de&lt;/a&gt; or &lt;a href=&quot;https://www.bahn.de/regional/view/regionen/bawue/freizeit/bawue_ticket.shtml&quot; target=&quot;_blank&quot;&gt;Baden-Württemberg-Ticket&lt;/a&gt;.
+    &lt;/p&gt;
+    &lt;p&gt;If you drive by car… &lt;/p&gt;
+
+    &lt;p&gt;Other useful information and time tables you find on the website of &lt;a href=&quot;http://www.burg-hohenzollern.com/&quot; target=&quot;_blank&quot;&gt;Hohenzollern Castle&lt;/a&gt;&lt;/p&gt;
+    
+    &lt;h3&gt;Kind of clothes you should pack&lt;/h3&gt;
+    &lt;p&gt;If you travel in a warm time it’s better to have one or two additional T-shirts. As you climb to a photo-spot it could be quite warm in the forest.&lt;/p&gt;
+    
+    &lt;h3&gt;The way you can go around&lt;/h3&gt;
+    &lt;p&gt;It is quite simple to get a place with public transport, but if you like to travel with car, here are awesome resource to find one in the region: &lt;a href=&quot;http://www.rentalcars.com/en/city/de/stuttgart/&quot;&gt;Rent a car in Stuttgart&lt;/a&gt;.&lt;/p&gt;
+    
+    &lt;h3&gt;Suggested daily budget&lt;/h3&gt;
+    &lt;p&gt;Assuming you travel with public transport only, have food in fast-food restaurants, your minimal day budget will be &lt;b&gt;around 56 EUR&lt;/b&gt;.&lt;/p&gt;
+    &lt;p&gt;This includes: &lt;/p&gt;
+    
+    &lt;ul&gt;
+        &lt;li&gt;Public transport, including regional train connections: (Stuttgart-Hechingen-Stuttgart): 24 EUR if you use &lt;a href=&quot;https://www.bahn.de/regional/view/regionen/bawue/freizeit/bawue_ticket.shtml&quot; target=&quot;_blank&quot;&gt;Baden-Württemberg-Ticket&lt;/a&gt; (21 EUR if you are under 27 years old).&lt;/li&gt;
+        &lt;li&gt;Food, if you eat in middle-class or fast-food restaurants - 20 EUR&lt;/li&gt;
+        &lt;li&gt;Castle entrance ticket (7 EUR - entrance to the castle's area, 12 EUR - visit also interior rooms of the castle, so we assume MAX-program here ;) )&lt;/li&gt;
+    &lt;/ul&gt;
+    
+    &lt;h3&gt;Useful resources&lt;/h3&gt;
+    &lt;p&gt;The most useful resource in this case is the official &lt;a href=&quot;http://www.burg-hohenzollern.com/startpage.html&quot; target=&quot;_blank&quot;&gt;Hohenzollern Castle Website&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;To plan your route, you can use also very nice tool &lt;a href=&quot;https://www.goeuro.com/&quot; target=&quot;_blank&quot;&gt;goeuro.com&lt;/a&gt; &lt;/p&gt;
+&lt;/section&gt;</content><author><name></name></author><category term="hohenzollern" /><category term="photospot" /><summary type="html">Download Pocket travelguide</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/2017/06/27/welcome-to-jekyll/" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-06-27T09:24:03+02:00</published><updated>2017-06-27T09:24:03+02:00</updated><id>http://localhost:4000/2017/06/27/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/2017/06/27/welcome-to-jekyll/">&lt;p&gt;This is the test post&lt;/p&gt;</content><author><name></name></author><category term="photospot" /><summary type="html">This is the test post</summary></entry></feed>
