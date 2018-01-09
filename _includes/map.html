@@ -1,5 +1,5 @@
 <div class="map">
-    <img src="{% asset_path {{include.img}} %}" alt="Map">
+    {% asset {{include.img}} alt="Map" %}
     <div class="overlay"></div>
     <div class="button-wrapper">
         {% if {{include.mode}} and {{include.mode}} == "route" %}

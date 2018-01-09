@@ -4,8 +4,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Traveller tips website is a personal blog where I give some special hints and tips for travellers.
   I try to find most interesting places during my trips for good photo and video materials. If you are a traveller and what to find the most interesting and 
   sometimes hidden places around the Globe - this website is a great starting point.
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://travellertips.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+#baseurl: "/" # the subpath of your site, e.g. /blog
+#url: "https://travellertips.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: polinovskyi
 
 # Build settings
@@ -14,20 +14,28 @@ plugins:
   - jekyll-feed
   - jekyll-assets
   - jekyll-sitemap
+  
+defaults:
+  -
+    scope:
+      path: "_posts/" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
 
 assets:
-  compress:
-      css: false
-      js: false
-  autowrite: true
-  prefix: "/assets"
-  digest: false
-  assets:
-    - "*.png"
-    - "*.jpg"
-    - "*.svg"
-  features:
-    automatic_img_size: false
+  source_maps: true # false on JEKYLL_ENV=production
+  destination: "/assets"
+  compression: true
+  gzip: false
+  defaults:
+    js: { integrity: false } # true on JEKYLL_ENV=production
+    css: { integrity: false } # true on JEKYLL_ENV=production
+    img: { integrity: false } # true on JEKYLL_ENV=production
+  caching:
+    path: ".jekyll-cache/assets"
+    type: file # Possible values: memory, file
+    enabled: true
   sources:
     - _assets/bower
     - _assets/fonts
@@ -49,8 +57,6 @@ exclude:
   - bin/*
   - bower.json
   - circle.yml
-  - Gemfile
-  - Gemfile.lock
   - README.md
 
 ga_analytics: UA-103038704-1
@@ -59,4 +65,3 @@ name:
 
 permalink: pretty
 
-url: # Add your site url

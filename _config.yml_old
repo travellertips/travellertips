@@ -1,0 +1,62 @@
+title: Traveller tips website!
+email: g.polinovskyi@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Traveller tips website is a personal blog where I give some special hints and tips for travellers.
+  I try to find most interesting places during my trips for good photo and video materials. If you are a traveller and what to find the most interesting and 
+  sometimes hidden places around the Globe - this website is a great starting point.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://travellertips.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: polinovskyi
+
+# Build settings
+# theme: jekyll-theme-cayman
+plugins:
+  - jekyll-feed
+  - jekyll-assets
+  - jekyll-sitemap
+
+assets:
+  compress:
+      css: false
+      js: false
+  autowrite: true
+  prefix: "/assets"
+  digest: false
+  assets:
+    - "*.png"
+    - "*.jpg"
+    - "*.svg"
+  features:
+    automatic_img_size: false
+  sources:
+    - _assets/bower
+    - _assets/fonts
+    - _assets/images
+    - _assets/images/general
+    - _assets/images/posts
+    - _assets/images/thumbnails
+    - _assets/images/maps
+    - _assets/css
+    - _assets/js
+  autoprefixer:
+    browsers:
+      - "last 2 versions"
+      - "IE > 9"
+
+exclude:
+  - .bowerrc
+  - .travis.yml
+  - bin/*
+  - bower.json
+  - circle.yml
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+ga_analytics: UA-103038704-1
+
+name: 
+
+permalink: pretty
+
+url: # Add your site url

@@ -1,7 +1,7 @@
 
-{% js main %}
+{% asset main.js %}
 
-{% if site.ga_analytics %}
+{% if site.ga_analytics && jekyll.environment == "production" %}
   <script>
     window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
     ga('create','{{ site.ga_analytics }}','auto');ga('send','pageview')
