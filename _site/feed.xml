@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-02T11:39:08+01:00</updated><id>http://localhost:4000/</id><title type="html">Traveller tips website!</title><subtitle>Traveller tips website is a personal blog where I give some special hints and tips for travellers. I try to find most interesting places during my trips for good photo and video materials. If you are a traveller and what to find the most interesting and  sometimes hidden places around the Globe - this website is a great starting point.
-</subtitle><entry><title type="html">Visit the exclusion zone long name here</title><link href="http://localhost:4000/zone/" rel="alternate" type="text/html" title="Visit the exclusion zone long name here" /><published>2017-07-28T00:00:00+02:00</published><updated>2017-07-28T00:00:00+02:00</updated><id>http://localhost:4000/zone</id><content type="html" xml:base="http://localhost:4000/zone/">&lt;script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAz8v3Ylh6Q2GQDVxSOWGFD_h_uiNfiE1k&amp;v=3.exp'&gt;&lt;/script&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-01-09T14:57:59+01:00</updated><id>/</id><title type="html">Traveller tips website!</title><subtitle>Traveller tips website is a personal blog where I give some special hints and tips for travellers. I try to find most interesting places during my trips for good photo and video materials. If you are a traveller and what to find the most interesting and  sometimes hidden places around the Globe - this website is a great starting point.
+</subtitle><entry><title type="html">Visit the exclusion zone long name here</title><link href="/zone/" rel="alternate" type="text/html" title="Visit the exclusion zone long name here" /><published>2017-07-28T00:00:00+02:00</published><updated>2017-07-28T00:00:00+02:00</updated><id>/zone</id><content type="html" xml:base="/zone/">&lt;script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAz8v3Ylh6Q2GQDVxSOWGFD_h_uiNfiE1k&amp;v=3.exp'&gt;&lt;/script&gt;
 
 &lt;p&gt;If you want to visit this great medieval castle, your start point should be Stuttgart. From there you should take the regional train to Hechingen. If you want a direct train, this could be IRE 3253 like in my case and you should plan it good, as it departures approximately every 2 hours. The ticket price was 19 EUR for me. You can check and book the tickets &lt;a href=&quot;http://reiseauskunft.bahn.de/bin/query2.exe/dn?ld=15073&amp;seqnr=2&amp;ident=6l.0190673.1497683751&amp;rt=1&amp;rememberSortType=minDeparture&amp;HWAI=JS!ajax=yes!js=yes!&amp;REQ0HafasScrollDir=2&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
@@ -9,13 +9,13 @@
 
 &lt;p&gt;Hechingen is very quiet small town. If you go to the back of the station you can already see the castle on the hill. There are two ways to get the castle - shuttle bus (every hour) or a taxi (~15 EUR). In my case it was a taxi, as I had not much time and planned to visit another German castle. Taxi or shuttle bus drives you to the parking platform that is about 10 minutes from the castle. There you can use the toilet and find some snacks as well as the tourist information, tickets to the second shuttle to the castle. You have two options to go: by foot or by shuttle bus. I would recommend a bus, as you’re going to save some power to go to the view point ;) &lt;/p&gt;
 
-&lt;img src=&quot;/assets/posts/hohenzollern2.jpg&quot; alt=&quot;Inside Hohenzollern castle&quot; /&gt;
+&lt;img src=&quot;&lt;img src=&quot;/assets/posts/hohenzollern2-4ff91424310826cec47c4d15b2d649d83eacfbf211af020718d2fd47c8fb0d12.jpg&quot;&gt;&quot; alt=&quot;Inside Hohenzollern castle&quot; /&gt;
 
 &lt;p&gt;In the castle you’ll manage to buy tickets, you can eat at the restaurant in the castle, have a guided tour. It is very interesting in the castle itself. Also, if you're hungry, there is a nice small cafe in its territory - you can drink some coffee and look into the distant hills.&lt;/p&gt;
 
 &lt;p&gt; But afterwards you would want to go here:&lt;/p&gt;
 
-&lt;img src=&quot;/assets/posts/hohenzollern4.jpg&quot; alt=&quot;Hohenzollern castle view&quot; /&gt;
+&lt;img src=&quot;&lt;img src=&quot;/assets/posts/hohenzollern4-5629388fee9da31796ec0c43ae7980e25f316a1f9dbfb599d957d8bd1620b3f3.jpg&quot;&gt;&quot; alt=&quot;Hohenzollern castle view&quot; /&gt;
 
 &lt;p&gt;So, let’s go to a magnificent view!&lt;/p&gt;
 
@@ -32,7 +32,7 @@
 
 &lt;p&gt;This is what you expect to see there:&lt;/p&gt;
 
-&lt;img src=&quot;/assets/posts/hohenzollern3.jpg&quot; alt=&quot;Mariazell Church&quot; /&gt;
+&lt;img src=&quot;&lt;img src=&quot;/assets/posts/hohenzollern3-65201d18d735d03e15be19f84f72a18b9599a558714f890e197e02169d9e5198.jpg&quot;&gt;&quot; alt=&quot;Mariazell Church&quot; /&gt;
 
 &lt;p&gt;After the church the path to Zellerhorn have noticeable incline to the top of the hill.&lt;/p&gt;
 
@@ -104,8 +104,8 @@ Zellerhornwiese &lt;br&gt;
         
     }
     google.maps.event.addDomListener(window, 'load', init_map2);
-&lt;/script&gt;</content><author><name></name></author><category term="hohenzollern" /><category term="photospot" /><summary type="html"></summary></entry><entry><title type="html">Hohenzollern visit</title><link href="http://localhost:4000/hohenzollern/" rel="alternate" type="text/html" title="Hohenzollern visit" /><published>2017-07-07T00:00:00+02:00</published><updated>2017-07-07T00:00:00+02:00</updated><id>http://localhost:4000/hohenzollern</id><content type="html" xml:base="http://localhost:4000/hohenzollern/">&lt;div class=&quot;download-guide&quot;&gt;
-        &lt;a href=&quot;http://localhost:4000/downloads/hohenzollern_guide.pdf&quot; target=&quot;_blank&quot; class=&quot;button&quot;&gt;Download Pocket travelguide&lt;/a&gt;
+&lt;/script&gt;</content><author><name></name></author><category term="hohenzollern" /><category term="photospot" /><summary type="html"></summary></entry><entry><title type="html">Hohenzollern visit</title><link href="/hohenzollern/" rel="alternate" type="text/html" title="Hohenzollern visit" /><published>2017-07-07T00:00:00+02:00</published><updated>2017-07-07T00:00:00+02:00</updated><id>/hohenzollern</id><content type="html" xml:base="/hohenzollern/">&lt;div class=&quot;download-guide&quot;&gt;
+        &lt;a href=&quot;/downloads/hohenzollern_guide.pdf&quot; target=&quot;_blank&quot; class=&quot;button&quot;&gt;Download Pocket travelguide&lt;/a&gt;
     &lt;/div&gt;
   
 
@@ -117,7 +117,7 @@ Zellerhornwiese &lt;br&gt;
 
 &lt;p&gt;The view of the castle is spectacular! Its gothic style reveals some unknown romantic feeling. The landscape around makes the place even more attractive to visit.&lt;/p&gt;
 
-&lt;img src=&quot;/assets/posts/hohenzollern_top.jpg&quot; alt=&quot;Hohenzollern castle view&quot; /&gt;
+&lt;img alt=&quot;Hohenzollern castle view&quot; src=&quot;/assets/posts/hohenzollern_top-cf6a0c551658b29f648a183a8b243760e15b2feafd73300d9610f2fa3dab8ec4.jpg&quot;&gt;
 
 &lt;h2&gt;How to get the place&lt;/h2&gt;
 
@@ -129,13 +129,13 @@ Zellerhornwiese &lt;br&gt;
 
 &lt;p&gt;Hechingen is very quiet small town and there is no problem to find the right direction. When you step out from the train, you can go to the back of the station &amp;mdash; from there you already see the castle on the hill. There are two ways to get the castle: shuttle bus (departures every hour from the bus station that is right near the railway station) or a taxi (~15 EUR). In my case it was a taxi, as I had not much time and planned to visit &lt;a href=&quot;https://www.instagram.com/p/BH7L30qgetc/?taken-by=polinovskyi&quot; target=&quot;_blank&quot;&gt;another German castle&lt;/a&gt; next morning. Another benefit to take a taxi &amp;mdash; is that you can ask driver to stop on the spot which is great for a nice photo. Taxi or shuttle bus drives you to the parking space that is about 10 minutes from the castle. There you can use the toilet and find some snacks as well as the tourist information. And yes, I am writting here about the toilet. Ha-ha. When you travel, sometimes it's a hell to find a &quot;rest place&quot;. There are two options to get the castle from parking: by foot or by castle shuttle bus. Ticket for the shuttle to the castle costs 2 EUR for an adult. I would recommend a bus, as you’re going to save some power to go to the view point ;) &lt;/p&gt;
 
-&lt;img src=&quot;/assets/posts/hohenzollern2.jpg&quot; alt=&quot;Inside Hohenzollern castle&quot; /&gt;
+&lt;img alt=&quot;Inside Hohenzollern castle&quot; src=&quot;/assets/posts/hohenzollern2-4ff91424310826cec47c4d15b2d649d83eacfbf211af020718d2fd47c8fb0d12.jpg&quot;&gt;
 
 &lt;p&gt;In the castle you can go for a guided tour or walk yourself. If you're hungry or desperately in the need of a cup of coffee, you can sit at small caffee on its territory and eat some snack there. It is quite interesting in the castle itself [ADD INTERRIOR INFO]. But the most mesmerizing there &amp;mdash; is the view that opens for you.&lt;/p&gt;
 
 &lt;p&gt;After getting around and buying a magnet for your fridge &amp;mdash; you might want to go here:&lt;/p&gt;
 
-&lt;img src=&quot;/assets/posts/hohenzollern4.jpg&quot; alt=&quot;Hohenzollern castle view&quot; /&gt;
+&lt;img alt=&quot;Hohenzollern castle view&quot; src=&quot;/assets/posts/hohenzollern4-5629388fee9da31796ec0c43ae7980e25f316a1f9dbfb599d957d8bd1620b3f3.jpg&quot;&gt;
 
 &lt;p&gt;So, let’s go to a magnificent view point!&lt;/p&gt;
 
@@ -149,7 +149,7 @@ Zellerhornwiese &lt;br&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;map&quot;&gt;
-    &lt;img src=&quot;/assets/posts/maps/hohenzollern_mariazell.png&quot; alt=&quot;Map&quot;&gt;
+    &lt;img alt=&quot;Map&quot; src=&quot;/assets/posts/maps/hohenzollern_mariazell-6c0d096a8ab3530564249c9c21d3de356d6479e8a3e0f35816502c83752413af.png&quot;&gt;
     &lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;button-wrapper&quot;&gt;
         
@@ -163,7 +163,7 @@ Zellerhornwiese &lt;br&gt;
 
 &lt;p&gt;This is what you expect to see there:&lt;/p&gt;
 
-&lt;img src=&quot;/assets/posts/hohenzollern3.jpg&quot; alt=&quot;Mariazell Church&quot; /&gt;
+&lt;img alt=&quot;Mariazell Church&quot; src=&quot;/assets/posts/hohenzollern3-65201d18d735d03e15be19f84f72a18b9599a558714f890e197e02169d9e5198.jpg&quot;&gt;
 
 &lt;p&gt;After the church the path to Zellerhorn have noticeable incline to the top of the hill.&lt;/p&gt;
 
@@ -175,7 +175,7 @@ Zellerhornwiese &lt;br&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;map&quot;&gt;
-    &lt;img src=&quot;/assets/posts/maps/hohenzollern_zellerhorn.png&quot; alt=&quot;Map&quot;&gt;
+    &lt;img alt=&quot;Map&quot; src=&quot;/assets/posts/maps/hohenzollern_zellerhorn-880872c34c5898b7f29efdabfef462e6ad760da7bd5937355367f545a6a7babd.png&quot;&gt;
     &lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;button-wrapper&quot;&gt;
         
@@ -199,7 +199,7 @@ Zellerhornwiese &lt;br&gt;
 &lt;p&gt;So, to get the most prominent experience of the place, I would recommend this route&lt;/p&gt;
 
 &lt;div class=&quot;map&quot;&gt;
-    &lt;img src=&quot;/assets/posts/maps/hohenzollern_zellerhorn.png&quot; alt=&quot;Map&quot;&gt;
+    &lt;img alt=&quot;Map&quot; src=&quot;/assets/posts/maps/hohenzollern_zellerhorn-880872c34c5898b7f29efdabfef462e6ad760da7bd5937355367f545a6a7babd.png&quot;&gt;
     &lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;button-wrapper&quot;&gt;
         
@@ -243,4 +243,4 @@ Zellerhornwiese &lt;br&gt;
     &lt;h3&gt;Useful resources&lt;/h3&gt;
     &lt;p&gt;The most useful resource in this case is the official &lt;a href=&quot;http://www.burg-hohenzollern.com/startpage.html&quot; target=&quot;_blank&quot;&gt;Hohenzollern Castle Website&lt;/a&gt;&lt;/p&gt;
     &lt;p&gt;To plan your route, you can use also very nice tool &lt;a href=&quot;https://www.goeuro.com/&quot; target=&quot;_blank&quot;&gt;goeuro.com&lt;/a&gt; &lt;/p&gt;
-&lt;/section&gt;</content><author><name></name></author><category term="hohenzollern" /><category term="photospot" /><summary type="html">Download Pocket travelguide</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/2017/06/27/welcome-to-jekyll/" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-06-27T09:24:03+02:00</published><updated>2017-06-27T09:24:03+02:00</updated><id>http://localhost:4000/2017/06/27/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/2017/06/27/welcome-to-jekyll/">&lt;p&gt;This is the test post&lt;/p&gt;</content><author><name></name></author><category term="photospot" /><summary type="html">This is the test post</summary></entry></feed>
+&lt;/section&gt;</content><author><name></name></author><category term="hohenzollern" /><category term="photospot" /><summary type="html">Download Pocket travelguide</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="/2017/06/27/welcome-to-jekyll/" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-06-27T09:24:03+02:00</published><updated>2017-06-27T09:24:03+02:00</updated><id>/2017/06/27/welcome-to-jekyll</id><content type="html" xml:base="/2017/06/27/welcome-to-jekyll/">&lt;p&gt;This is the test post&lt;/p&gt;</content><author><name></name></author><category term="photospot" /><summary type="html">This is the test post</summary></entry></feed>
