@@ -1,0 +1,455 @@
+@import "normalize";
+@import "variables";
+@import "mixins";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $body-text-color;
+}
+
+.reader {
+    visibility: hidden;
+    width: 1px;
+    height: 0;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+a {
+  color: $body-link-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* ============== HEADER ==============*/
+@import "header";
+/* =========== // HEADER ==============*/
+
+/* ============== NAVIGATION ==============*/
+@import "nav";
+/* =========== // NAVIGATION ==============*/
+
+.gmap_canvas img {
+    max-width:none!important;
+    background:none!important
+}
+
+.location-address {
+    margin: 1em;
+    color: black;
+    font-size: 1rem;
+}
+
+.tipp {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    padding: 1em 1em 1em 4em;
+    min-height: 8.5em;
+    border: 1px solid $border-color;
+    color: $tipp-text-color;
+    background: $tipp-bg-color;
+    position: relative;
+    
+    &::after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 86px;
+        @extend %sprite;
+        background-position: -88px -62px;
+        position: absolute;
+        top: 22px;
+        left: 24px;
+    }
+    
+    p:last-child {
+        margin: 0;
+    }
+}
+
+/*
+
+.btn {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  + .btn {
+    margin-left: 1rem;
+  }
+
+  @include huge {
+    padding: 0.75rem 1rem;
+  }
+
+  @include large {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.9rem;
+  }
+
+  @include medium {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+
+    + .btn {
+      margin-top: 1rem;
+      margin-left: 0;
+    }
+  }
+}
+
+*/
+
+.button {
+    display: inline-block;
+    margin-bottom: 1rem;
+    line-height: normal;
+    padding: 0.5em;
+    color: rgba($main-color, 0.7);
+    background-color: rgba($main-color, 0.08);
+    border-color: rgba($main-color, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.3rem;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+
+    &:hover {
+        color: rgba($main-color, 0.8);
+        text-decoration: none;
+        background-color: rgba($main-color, 0.2);
+        border-color: rgba($main-color, 0.3);
+    }    
+}
+
+.main-content {
+    word-wrap: break-word;
+    margin: auto;
+
+  :first-child {
+    margin-top: 0;
+  }
+
+  @include container;
+  max-width: $huge-breakpoint;
+    
+    &.post {
+        max-width: 50em;   
+    }
+
+  img {
+    max-width: 100%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: $section-headings-color;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  pre {
+    padding: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    color: $tipp-text-color;
+    word-wrap: normal;
+    background-color: $tipp-bg-color;
+    border: solid 1px $border-color;
+    border-radius: 0.3rem;
+  }
+
+  .highlight {
+    margin-bottom: 1rem;
+
+    pre {
+      margin-bottom: 0;
+      word-break: normal;
+    }
+  }
+
+  .highlight pre,
+  pre {
+    padding: 0.8rem;
+    overflow: auto;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    border-radius: 0.3rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  pre code,
+  pre tt {
+    display: inline;
+    max-width: initial;
+    padding: 0;
+    margin: 0;
+    overflow: initial;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+
+    &:before,
+    &:after {
+      content: normal;
+    }
+  }
+
+  ul,
+  ol {
+    margin-top: 0;
+  }
+
+  blockquote {
+    padding: 0 1rem;
+    margin-left: 0;
+    color: $blockquote-text-color;
+    border-left: 0.3rem solid $border-color;
+
+    > :first-child {
+      margin-top: 0;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all; // For Firefox to horizontally scroll wider tables.
+    -webkit-overflow-scrolling: touch;
+
+    th {
+      font-weight: bold;
+    }
+
+    th,
+    td {
+      padding: 0.5rem 1rem;
+      border: 1px solid $table-border-color;
+    }
+  }
+
+  dl {
+    padding: 0;
+
+    dt {
+      padding: 0;
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    dd {
+      padding: 0;
+      margin-bottom: 1rem;
+    }
+  }
+
+  hr {
+    height: 2px;
+    padding: 0;
+    margin: 1rem 0;
+    background-color: $hr-border-color;
+    border: 0;
+  }
+}
+
+.recent-posts,
+.all-posts {
+    
+   ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        li {
+            width: 50%;
+            padding-right: 25px;
+            margin-bottom: 2em;
+            display: flex;
+            flex-flow: column nowrap;
+            
+            @include medium {
+                width: 100%;
+                align-items: center;
+                padding: 0;
+            }
+            
+            &:nth-child(2n) {
+                padding-right: 0;
+                padding-left: 25px;
+                
+                @include medium {
+                    padding: 0;
+                }
+            }
+            
+            a {
+                margin-top: auto;
+                color: $body-text-color;
+                
+                &:hover {
+                    color: $dark;
+                    text-decoration: none;
+                }
+            }
+            
+        }
+
+    }    
+}
+
+.recent-posts {
+    
+    h1 {
+        text-align: center;
+    }
+    
+    h2 {
+        
+        @include huge {
+            font-size: 50px;
+            line-height: 54px;
+        }
+
+        @include large {
+            font-size: 40px;
+            line-height: 44px;
+        }
+
+        @include medium {
+            font-size: 34px;
+            line-height: 36px;
+        }
+    }
+}
+
+.all-posts {
+    
+    h1 {
+        text-align: center;
+    }
+    
+    ul li {
+        margin-bottom: 1em;
+    }
+    
+    h2 {
+
+        @include large {
+            font-size: 32px;
+            line-height: 36px;
+        }
+
+        @include medium {
+            font-size: 28px;
+            line-height: 32px;
+        }
+    }
+    
+}
+
+/* ============== Google map ==============*/
+
+.map {
+    position: relative;
+    display: inline-block;
+    line-height: 0;
+    
+    .overlay {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        background: #fff;
+        z-index: 1;
+    }
+    
+    .button-wrapper {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+    }
+    
+    a {
+        display: none;
+        position: relative;
+        left: -50%;
+        z-index: 2;
+    }
+    
+    &:hover {
+        
+        .overlay {
+            display: block;
+        }
+        
+        a {
+            display: inline-block;
+        }
+    }
+}
+
+
+/* ============== // Google map ==============*/
+
+/* ============== FOOTER ==============*/
+@import "footer";
+/* ============== // FOOTER ==============*/
+
+
+
+
+
+
+
+

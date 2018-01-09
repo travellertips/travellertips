@@ -1,0 +1,133 @@
+@import "variables";
+@import "mixins";
+
+%sprite {
+    background: url(asset_path('sprite.svg'));
+    background-repeat: no-repeat;  
+}
+
+.page-top-header {
+    height: 80px;
+    box-shadow: 0 0 4px $body-text-color;
+    position: relative;
+}
+
+.header-wrapper {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    overflow: hidden;
+
+    @include huge {
+        padding-left: $side-padding-huge;
+        padding-right: $side-padding-huge;
+    }
+    
+    @include large {
+        padding-left: $side-padding-large;
+        padding-right: $side-padding-large;
+    }
+
+    @include medium {
+        padding-left: $side-padding-medium;
+        padding-right: $side-padding-medium;
+        flex-wrap: wrap;
+    }
+    
+    @include small {
+        padding-left: $side-padding-small;
+        padding-right: $side-padding-small;
+    }
+    
+}
+
+.logo {
+    @extend %sprite;
+    display: inline-block;
+    width: 300px;
+    height: 60px;
+    
+    @include small {
+        width: 240px;
+        height: 45px;
+        background-size: 95%;
+    }
+}
+
+.gallery-header {
+    background: url(asset_path('background2.jpg')) no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: calc(100vh - 80px);
+    display: flex;
+//    margin-bottom: 80px;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    position: absolute;
+    top: calc(50% - 85px);
+    left: 4rem;
+    
+    @include large {
+        left: 2.5rem;
+    }
+
+    @include medium {
+        left: 2rem;
+    }
+    
+    @include small {
+        left: 1rem;
+        transform: scale(0.8);
+    }    
+    
+    a {
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        margin: 0.5em 0;
+    }
+}
+
+.instagram {
+    @extend %sprite;
+    background-position: -13px -130px;
+}
+
+.twitter {
+    @extend %sprite;
+    background-position: -13px -185px;    
+}
+
+.linkedin {
+    @extend %sprite;
+    background-position: -13px -249px;    
+}
+
+.site-description {
+    background: #fff;
+    font-size: $large-font-size;
+    margin: -6vw auto 0;
+    padding: 1.5em 2em 0;
+    
+    @include huge {
+        max-width: 64rem;
+    }
+
+    @include large {
+        max-width: 54rem;
+    }
+
+    @include medium {
+        max-width: 50rem;
+        font-size: 16px;
+    }
+    
+}
