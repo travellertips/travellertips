@@ -4,6 +4,6 @@
 *.jekyll-metadata
 /backup
 /.asset-cache/*
-/jekyll-cache/*
+/.jekyll-cache/*
 /_assets/bower/*
 /_assets/images/posts/fresh/*
