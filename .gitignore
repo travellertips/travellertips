@@ -2,8 +2,10 @@
 *.DS_Store
 *.sass-cache
 *.jekyll-metadata
+.jekyll-cache
 /backup
 /.asset-cache/*
 /.jekyll-cache/*
 /_assets/bower/*
+/_site/*
 /_assets/images/posts/fresh/*
