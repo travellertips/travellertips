@@ -395,6 +395,33 @@ a {
     
 }
 
+.related-posts-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+    > div {
+        width: 33%;
+        margin-left: 1em;
+        
+        &:first-child {
+            margin: 0;
+        }
+        
+        @include medium {
+            width: 100%;
+        }
+    }
+    
+    h3 {
+
+        @include medium {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+}
+
 /* ============== Google map ==============*/
 
 .map {

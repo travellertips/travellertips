@@ -42,7 +42,8 @@ assets:
     - _assets/images
     - _assets/images/general
     - _assets/images/posts
-    - _assets/images/thumbnails
+    - _assets/images/thumbnails650
+    - _assets/images/thumbnails320
     - _assets/images/maps
     - _assets/css
     - _assets/js

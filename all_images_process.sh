@@ -41,23 +41,50 @@ then
 
     mogrify -strip -interlace Plane -gaussian-blur 0.05 -resize 1200x675 -unsharp 0x1 -quality 75 -density 72x72 -units pixelsperinch -gravity Center -crop 1200x675+0+0 +repage *.* 
 
-    rm -r thumbnails/*
+    rm -r thumbnails650/*
 
-    cp "$cwd"/* "thumbnails"
+    cp "$cwd"/* "thumbnails650"
 
-    cd thumbnails
+    # Creating thumbnails 650
 
+    echo "Creating thumbnails 650x"
+
+    cd thumbnails650
     thumb='-thumb.' #postfix for rename
 
-    ### rename thumbnails files
-    for file in *
+    for f in `cat $PROCEED_LIST`
     do
-        mv "$file" "${file%.*}$thumb${file##*.}"
+        echo "Processing thumbnail of $f"
+        cp ../fresh/$f .
+
+        ### rename thumbnails files
+        mv "$f" "${f%.*}$thumb${f##*.}"
+
+        ### resize all thumbnails
+        mogrify -strip -interlace Plane -gaussian-blur 0.02 -resize '650' -unsharp 0x1 -quality 85 -density 72x72 -units pixelsperinch -gravity Center -crop 650x365+0+0 +repage ${f%.*}$thumb${f##*.}
     done
 
-    ### resize all thumbnails
-    mogrify -strip -interlace Plane -gaussian-blur 0.02 -resize '650' -unsharp 0x1 -quality 85 -density 72x72 -units pixelsperinch -gravity Center -crop 650x365+0+0 +repage *.* 
+    cd ../
     
+    # Creating thumbnails 320
+
+    echo "Creating thumbnails 320x"
+
+    cd thumbnails320
+    thumb='-thumb.' #postfix for rename
+
+    for f in `cat $PROCEED_LIST`
+    do
+        echo "Processing thumbnail of $f"
+        cp ../fresh/$f .
+
+        ### rename thumbnails files
+        mv "$f" "${f%.*}$thumb${f##*.}"
+
+        ### resize all thumbnails
+        mogrify -strip -interlace Plane -gaussian-blur 0.02 -resize '320' -unsharp 0x1 -quality 85 -density 72x72 -units pixelsperinch -gravity Center -crop 320x180+0+0 +repage ${f%.*}$thumb${f##*.}
+    done
+
     cd ../
     
     echo $NEW_STAT > $OLD_STAT_FILE
