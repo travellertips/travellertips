@@ -1,34 +1,50 @@
 # 
 
-## Installation
+## Image processing scripts description:
 
-Install the gem:
+Images processing scripts are using mogrify as an image processor. To not execute the image processing each time, the comparison files are created that display the list of new images (new_img_list.txt) in the _assets/images/posts/fresh/ folder and the list of already processed images (old_img_list.txt) in the _assets/images/posts/ folder.
 
-    gem install kickster
+# new_images_process.sh
 
-Execute gem and scaffold Kickster files:
+    - script checks the image lists and if new images were added to the /fresh/ folder, then they are processed. Images are resized, cropped and compressed. Also thumbnails of two sixes are created (640px and 320px width respectively)
 
-    kickster new site_name
+# all_images_process.sh
 
-Setup your environment:
+    - will do the image process for all imges again.
+    
 
-    cd site_name
-    bin/setup
+## Other bash scripts description
 
-You can push your project to any branch except `gh-pages`. For `sitename.github.io` repo users make sure to use another branch than `master`.
+# run.sh
 
-## Development
+    - builds website and runs the server
+    
+# run_prod.sh
 
-Run Jekyll:
+    - builds website for PROD environment (see _config.yml) and runs the server
 
-    bundle exec jekyll serve
+## Posts Front Matter
 
-*If you do not want the Kickster setup but just the deploy scripts then copy them from the `bin` folder.*
+# tags
 
-## Deploy to GitHub Pages
+    - tags are used for getting similar articles or within a search
+    
+# categories 
 
-Run this in the root project folder in your console:
+    - categories are used for countries (interactive map, search and menu)
+    
+# thumbnail
 
-    bin/deploy
+    - path to related to post thumbnail (640 px in width) images - used on pages with lists of posts
+    
+# thumbsmall
 
-*Don't forget to enable your repository on [Circle CI](https://circleci.com/docs/getting-started) and update the `_config.yml` file with your url!*
+    - path to related to post thumbnail (320 px in width) images - used on related articles widget
+    
+# capsule
+
+    - can have two values _new_ or _found_ - then the capsule bage is shown on the blog article, showing if the treasure capsule was applied or has been already found
+    
+# menu
+
+    - used for posts - making the related menu item active (to be developed)
