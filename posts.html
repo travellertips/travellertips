@@ -12,7 +12,16 @@ menu: posts
             <li>
                 <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
                 {% if post.thumbnail %}
-                    <a href="{{ post.url }}">{% asset {{post.thumbnail}} alt="{{post.title}}" %}
+                    <a href="{{ post.url }}" class="post-thumb">
+                        {% if post.capsule == 'new' %}
+                            <span class="capsule"></span>
+                        {% endif %}
+                        {% if post.capsule == 'found' %}
+                            <span class="capsule-found"></span>
+                        {% endif %}
+                        
+                        {% asset {{post.thumbnail}} alt="{{post.title}}" %}
+                    </a>
                 {% endif %}
                 {% if post.date %}
                     <time datetime="{{ post.date | date_to_long_string }}" itemprop="datePublished">

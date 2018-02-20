@@ -18,6 +18,12 @@
                         {{ page.date | date_to_long_string }}
                     </time>
                 </p>
+                {% if page.capsule == 'new' %}
+                    <span class="capsule"></span>
+                {% endif %}
+                {% if page.capsule == 'found' %}
+                    <span class="capsule-found"></span>
+                {% endif %}
             </header>
 
             <div class="post-content" itemprop="articleBody">

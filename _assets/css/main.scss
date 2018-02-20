@@ -340,6 +340,10 @@ a {
                 }
             }
             
+            .post-thumb {
+                position: relative;
+            }
+            
         }
 
     }    
@@ -419,6 +423,31 @@ a {
             font-size: 16px;
             line-height: 22px;
         }
+    }
+}
+
+/* ============== CAPSULE =================*/
+
+.capsule,
+.capsule-found {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: red;
+}
+
+.capsule-found {
+    background: grey;
+}
+
+.post-header {
+    .capsule,
+    .capsule-found {
+        position: relative;
     }
 }
 
