@@ -1,50 +1,50 @@
 # 
 
-## Image processing scripts description:
+# Image processing scripts description:
 
 Images processing scripts are using mogrify as an image processor. To not execute the image processing each time, the comparison files are created that display the list of new images (new_img_list.txt) in the _assets/images/posts/fresh/ folder and the list of already processed images (old_img_list.txt) in the _assets/images/posts/ folder.
 
-# new_images_process.sh
+## new_images_process.sh
 
-    - script checks the image lists and if new images were added to the /fresh/ folder, then they are processed. Images are resized, cropped and compressed. Also thumbnails of two sixes are created (640px and 320px width respectively)
+script checks the image lists and if new images were added to the /fresh/ folder, then they are processed. Images are resized, cropped and compressed. Also thumbnails of two sixes are created (640px and 320px width respectively)
 
-# all_images_process.sh
+## all_images_process.sh
 
-    - will do the image process for all imges again.
+will do the image process for all imges again.
     
 
-## Other bash scripts description
+# Other bash scripts description
 
-# run.sh
+## run.sh
 
-    - builds website and runs the server
+builds website and runs the server
     
-# run_prod.sh
+## run_prod.sh
 
-    - builds website for PROD environment (see _config.yml) and runs the server
+builds website for PROD environment (see _config.yml) and runs the server
 
-## Posts Front Matter
+# Posts Front Matter
 
-# tags
+## tags
 
-    - tags are used for getting similar articles or within a search
+tags are used for getting similar articles or within a search
     
-# categories 
+## categories 
 
-    - categories are used for countries (interactive map, search and menu)
+categories are used for countries (interactive map, search and menu)
     
-# thumbnail
+## thumbnail
 
-    - path to related to post thumbnail (640 px in width) images - used on pages with lists of posts
+path to related to post thumbnail (640 px in width) images - used on pages with lists of posts
     
-# thumbsmall
+## thumbsmall
 
-    - path to related to post thumbnail (320 px in width) images - used on related articles widget
+path to related to post thumbnail (320 px in width) images - used on related articles widget
     
-# capsule
+## capsule
 
-    - can have two values _new_ or _found_ - then the capsule bage is shown on the blog article, showing if the treasure capsule was applied or has been already found
+can have two values _new_ or _found_ - then the capsule bage is shown on the blog article, showing if the treasure capsule was applied or has been already found
     
-# menu
+## menu
 
-    - used for posts - making the related menu item active (to be developed)
+used for posts - making the related menu item active (to be developed)
