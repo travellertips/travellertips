@@ -30,7 +30,7 @@ menu: posts
                 {% endif %}
                 {% if post.summary %}
                     <p>
-                        {{ post.summary }}
+                        {{ post.summary | truncate: 100 }}
                     </p>
                 {% endif %}
             </li>

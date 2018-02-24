@@ -321,6 +321,10 @@ a {
                 padding: 0;
             }
             
+            h2 {
+                margin-top: auto !important; /* To move down headers to the picture */
+            }
+            
             &:nth-child(2n) {
                 padding-right: 0;
                 padding-left: 25px;
@@ -331,7 +335,6 @@ a {
             }
             
             a {
-                margin-top: auto;
                 color: $body-text-color;
                 
                 &:hover {

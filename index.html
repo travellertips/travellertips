@@ -29,7 +29,7 @@ title: Home
                 {% endif %}
                 {% if post.summary %}
                     <p>
-                        {{ post.summary }}
+                        {{ post.summary | truncate: 180 }}
                     </p>
                 {% endif %}
             </li>
