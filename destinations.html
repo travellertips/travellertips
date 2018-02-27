@@ -8,7 +8,60 @@ navigation_weight: 2
 <p>This is destination page with map</p>
 
 
-{% include map.html 
-    place_id="ChIJ9Z59XbEDmkcRL1pF2TBwziI" 
-    img="thumbnails650/hohenzollern2-thumb.jpg" 
-%} 
+<script type='text/javascript' src='http://www.google.com/jsapi'></script>
+<script type='text/javascript'>google.load('visualization', '1', {'packages': ['geochart']});
+google.setOnLoadCallback(drawVisualization);
+
+function drawVisualization() {var data = new google.visualization.DataTable();
+
+ data.addColumn('string', 'Country');
+ data.addColumn('number', 'Value'); 
+ data.addColumn({type:'string', role:'tooltip'});
+
+ data.addRows([[{v:'DE',f:'Germany'},2,'3 posts']]);
+ data.addRows([[{v:'UA',f:'Ukraine'},12,'']]);
+
+ var options = {
+    backgroundColor: {fill:'#FFFFFF', stroke:'#FFFFFF', strokeWidth:0 },
+    colorAxis:  
+     {minValue: 0, maxValue: 12,  colors: ['#D95F0E','#FEC44F','#FEC44F','#FEC44F','#FEC44F','#FEC44F','#FEC44F','#FEC44F','#FEC44F','#FFF7BC','#FFF7BC','#FFF7BC','#FFF7BC',]},
+    legend: 'none',	
+    backgroundColor: {fill:'#FFFFFF', stroke:'#FFFFFF', strokeWidth:0 },	
+    datalessRegionColor: '#F5F0E7',
+    displayMode: 'regions', 
+    enableRegionInteractivity: 'true', 
+    resolution: 'countries',
+    sizeAxis: {minValue: 1, maxValue:1, minSize:10,  maxSize: 10},
+    region:'world',
+    keepAspectRatio: true,
+    width:800,
+    height:500,
+    tooltip: {textStyle: {color: '#444444'}, trigger:'focus'}	
+ };
+    var chart = new google.visualization.GeoChart(document.getElementById('visualization')); 
+        chart.draw(data, options);
+    
+// Add our selection handler.
+google.visualization.events.addListener(chart, 'select', selectHandler);
+
+// The selection handler.
+// Loop through all items in the selection and concatenate
+// a single message from all of them.
+function selectHandler() {
+  var selection = chart.getSelection();
+  var message = '';
+  for (var i = 0; i < selection.length; i++) {
+    var item = selection[i];
+    if (item.row != null) {
+      var str = data.getValue(item.row, 0);
+      message += str + '\n';
+    } 
+  }
+  if (message == '') {
+    message = 'nothing';
+  }
+  alert('You selected ' + message);
+}  
+                               }
+ </script>
+ <div id='visualization'></div>
