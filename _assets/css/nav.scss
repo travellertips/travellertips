@@ -1,5 +1,6 @@
 .main-nav {
     background: #fff;
+    z-index: 2;
     
     @include medium {
         position: absolute;
