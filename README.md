@@ -28,8 +28,12 @@ builds website for PROD environment (see _config.yml) and runs the server
 ## tags
 
 tags are used for getting similar articles or within a search
+
+## keywords
+
+keywords is the array of the key words of the post used in the context search
     
-## categories 
+## category 
 
 categories are used for countries (interactive map, search and menu)
     
