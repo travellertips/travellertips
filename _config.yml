@@ -14,7 +14,7 @@ plugins:
   - jekyll-feed
   - jekyll-assets
   - jekyll-sitemap
-#  - jekyll-paginate
+  - jekyll-paginate
   
 defaults:
   -
@@ -23,6 +23,9 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+
+paginate: 2
+paginate_path: "/blog/page:num/"
 
 assets:
   source_maps: true # false on JEKYLL_ENV=production

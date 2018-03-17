@@ -9,6 +9,13 @@
         <a href="/" class="logo"><span class="reader">travellertips logo</span></a>
         <nav class="main-nav">
             <ul>
+                <li>      
+                    {% if page.menu!=null %}
+                        <a href="/blog/index.html" class="active">Blog</a>
+                    {% else %}
+                        <a href="/blog/index.html">Blog</a>
+                    {% endif %}
+                </li>
             {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
             {% for p in navigation_pages %}
                 {% if p.navigation_weight %}
