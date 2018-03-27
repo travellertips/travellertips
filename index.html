@@ -7,18 +7,6 @@ title: Home
 <section class="recent-posts">
     <h1>Recent posts</h1>
     
-    <hr>
-    <h2>Search</h2>
-    
-    <form action="{{ site.baseurl }}/search/" method="get">
-      <label for="search-box">Search</label>
-      <input type="text" id="search-box" name="query">
-      <input type="submit" value="search">
-    </form>
-    
-    <hr>
-
-    
     <ul>
         {% for post in site.posts limit:4 %}
             <li>

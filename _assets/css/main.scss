@@ -434,17 +434,20 @@ a {
 .capsule,
 .capsule-found {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -12px;
+    left: -2px;
+    transform: rotate(-20deg);
     
     display: block;
-    width: 30px;
-    height: 30px;
-    background: red;
+    width: 17px;
+    height: 62px;
+    
+    @extend %sprite;
+    background-position: -55px -388px;
 }
 
 .capsule-found {
-    background: grey;
+    background-position: -55px -452px;
 }
 
 .post-header {
