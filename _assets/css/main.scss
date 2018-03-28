@@ -34,6 +34,13 @@ a {
   }
 }
 
+hr {
+    border: none;
+    height: 4px;
+    background: url(asset_path('stroke.svg'));
+    background-repeat: repeat;  
+}
+
 /* ============== HEADER ==============*/
 @import "header";
 /* =========== // HEADER ==============*/
@@ -54,10 +61,12 @@ a {
 }
 
 .tipp {
+    display: flex;
+    align-items: center;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     padding: 1em 1em 1em 4em;
-    min-height: 8.5em;
+    min-height: 5.5em;
     border: 1px solid $border-color;
     color: $tipp-text-color;
     background: $tipp-bg-color;
@@ -66,12 +75,12 @@ a {
     &::after {
         content: "";
         display: block;
-        width: 20px;
-        height: 86px;
+        width: 27px;
+        height: 54px;
         @extend %sprite;
-        background-position: -88px -62px;
+        background-position: -10px -333px;
         position: absolute;
-        top: 22px;
+        top: calc(50% - 27px);
         left: 24px;
     }
     
@@ -79,54 +88,6 @@ a {
         margin: 0;
     }
 }
-
-/*
-
-.btn {
-  display: inline-block;
-  margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0.3rem;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-
-  &:hover {
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
-  }
-
-  + .btn {
-    margin-left: 1rem;
-  }
-
-  @include huge {
-    padding: 0.75rem 1rem;
-  }
-
-  @include large {
-    padding: 0.6rem 0.9rem;
-    font-size: 0.9rem;
-  }
-
-  @include medium {
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 0.9rem;
-
-    + .btn {
-      margin-top: 1rem;
-      margin-left: 0;
-    }
-  }
-}
-
-*/
 
 .button {
     display: inline-block;
@@ -289,11 +250,7 @@ a {
   }
 
   hr {
-    height: 2px;
-    padding: 0;
-    margin: 1rem 0;
-    background-color: $hr-border-color;
-    border: 0;
+    margin: 3em 0;
   }
 }
 
@@ -352,7 +309,8 @@ a {
     }    
 }
 
-.recent-posts {
+.recent-posts,
+.destinations {
     
     h1 {
         text-align: center;
@@ -431,31 +389,167 @@ a {
 
 /* ============== CAPSULE =================*/
 
-.capsule,
-.capsule-found {
-    position: absolute;
-    top: -12px;
-    left: -2px;
-    transform: rotate(-20deg);
-    
-    display: block;
-    width: 17px;
-    height: 62px;
-    
-    @extend %sprite;
-    background-position: -55px -388px;
-}
+span {
+    &.capsule,
+    &.capsule-found {
+        position: absolute;
+        top: -12px;
+        left: -2px;
+        transform: rotate(-20deg);
 
-.capsule-found {
-    background-position: -55px -452px;
-}
+        display: block;
+        width: 17px;
+        height: 62px;
 
-.post-header {
-    .capsule,
-    .capsule-found {
-        position: relative;
+        @extend %sprite;
+        background-position: -55px -388px;
+    }
+
+    &.capsule-found {
+        background-position: -55px -452px;
     }
 }
+
+.post-title {
+    position: relative;
+    display: inline-block;
+    
+    &.capsule:after,
+    &.capsule-found:after {
+        content: "";
+        display: block;
+        width: 17px;
+        height: 62px;
+        transform: rotate(-20deg);
+        position: absolute;
+        right: -40px;
+        top: -7px;
+        @extend %sprite;
+        background-position: -55px -388px;
+    }
+    
+    &.capsule-found:after {
+        background-position: -55px -452px;
+    }
+}
+
+/* ============== // CAPSULE =================*/
+
+/* ============== PAGINATION =================*/
+
+.pagination {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 2em;
+    
+    > * {
+        padding: 0 10px;
+    }
+    
+    a, span,
+    a:hover,
+    a:active {
+        color: $main-nav-color;
+        text-decoration: none;
+    }
+    
+    .current-page,
+    a:not(.next):not(.prev):hover {
+        border-top: 3px solid $main-color;
+    }
+    
+}
+
+/* ============= // PAGINATION ================*/
+
+/* ============= Search icon main page ============ */
+
+.gallery-header {
+    .search input[type="submit"] {
+        display: none;
+    }
+
+    #search_toggle {
+        display: none;
+    }
+
+    .search-icon {
+        @extend %sprite;
+        background-position: -12px -234px; 
+
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        margin-top: 1.5em;
+        position: absolute;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    #search-box {
+        width: 0;
+        visibility: hidden;
+        opacity: 0;
+        border: none;
+        display: inline-block;
+        padding: 0;
+        position: absolute;
+        height: 40px;
+        border-radius: 20px;
+        top: 25px;
+        left: 0;
+        z-index: 0;
+        background: #fff;
+        transition: width $transition-speed, visibility $transition-speed, opacity $transition-speed;
+    }
+
+    input#search_toggle:checked + #search-box {
+        padding: 0.1em 0.8em 0.1em 2.8em;
+        position: absolute;
+        width: 400px;
+        opacity: 1;
+        visibility: visible;
+        transition: width $transition-speed, visibility $transition-speed, opacity $transition-speed;
+    }
+
+    input#search_toggle:checked ~ .search-icon {
+        background-position: -10px -276px; 
+    }
+}
+
+/* ============= // Search icon main page ============ */
+
+/* ============= Search field general ============== */
+
+#search-box {
+    width: 400px;
+    padding: 0.1em 0.8em 0.1em 2.8em;
+    border: 1px solid $border-color;
+    display: inline-block;
+    height: 40px;
+    border-radius: 20px;
+    z-index: 0;
+    background: #fff;
+}
+
+.search-wrapper {
+    display: inline-block;
+    position: relative;
+    
+    label {
+        position: absolute;
+        top: -1px;
+        left: 3px;
+        width: 40px;
+        height: 40px;
+        display: block;
+        @extend %sprite;
+        background-position: -10px -276px; 
+    }
+}
+
+/* ============= // Search field general ============ */
+
 
 /* ============== Google map ==============*/
 
@@ -503,6 +597,90 @@ a {
 
 
 /* ============== // Google map ==============*/
+
+/* ============== Traveller Tipps ================*/
+
+
+.travellertips-tipp {
+    padding-left: 50px;
+    
+    h3 {
+        position: relative;
+        
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -50px;
+            width: 40px;
+            height: 40px;
+            background-color: aqua;
+            @extend %sprite;
+        }
+        
+        &.BestTimeToVisit:before {
+            background-position: -87px -86px;
+        }
+        
+        &.HowYouGetThePlace:before {
+            background-position: -87px -129px;
+        }
+        
+        &.ClothesToPack:before {
+            background-position: -87px -86px;
+        }
+        
+        &.EquipmentToHave:before {
+            background-position: -87px -86px;
+        }
+        
+        &.BestPlacesToStay:before {
+            background-position: -87px -86px;
+        }
+        
+        &.WayToGoAround:before {
+            background-position: -87px -86px;
+        }
+        
+        &.HoToGetVisa:before {
+            background-position: -87px -86px;
+        }
+        
+        &.DailyBudget:before {
+            background-position: -87px -86px;
+        }
+        
+        &.UsefulResources:before {
+            background-position: -87px -86px;
+        }
+        
+        &.UsefulContacts:before {
+            background-position: -87px -86px;
+        }
+        
+        &.HelpfulVocabulary:before {
+            background-position: -87px -86px;
+        }
+        
+        &.ExtremeExperience:before {
+            background-position: -87px -86px;
+        }
+        
+        &.Photospots:before {
+            background-position: -87px -86px;
+        }
+        
+        &.Nightlife:before {
+            background-position: -87px -86px;
+        }
+        
+    }
+}
+
+
+
+/* ============== // Traveller Tipps ==============*/
 
 /* ============== FOOTER ==============*/
 @import "footer";

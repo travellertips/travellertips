@@ -7,7 +7,7 @@
 }
 
 .page-top-header {
-    height: 90px;
+    height: 95px;
     box-shadow: 0 0 4px $body-text-color;
     position: relative;
 }
@@ -49,12 +49,6 @@
     display: inline-block;
     width: 130px;
     height: 82px;
-    
-    @include small {
-        width: 240px;
-        height: 45px;
-        background-size: 95%;
-    }
 }
 
 .gallery-header {
@@ -113,61 +107,6 @@
     @extend %sprite;
     background-position: -14px -94px;    
 }
-
-/* ============= Search icon main page ============ */
-
-.search input[type="submit"] {
-    display: none;
-}
-
-#search_toggle {
-    display: none;
-}
-
-.search-icon {
-    @extend %sprite;
-    background-position: -12px -234px; 
-
-    display: inline-block;
-    width: 42px;
-    height: 42px;
-    margin-top: 1.5em;
-    position: absolute;
-    cursor: pointer;
-    z-index: 2;
-}
-
-#search-box {
-    width: 0;
-    visibility: hidden;
-    opacity: 0;
-    border: none;
-    display: inline-block;
-    padding: 0;
-    position: absolute;
-    height: 40px;
-    border-radius: 20px;
-    top: 25px;
-    left: 0;
-    z-index: 0;
-    background: #fff;
-    transition: width $transition-speed, visibility $transition-speed, opacity $transition-speed;
-}
-
-input#search_toggle:checked + #search-box {
-    padding: 0.1em 0.8em 0.1em 2.8em;
-    position: absolute;
-    width: 340px;
-    opacity: 1;
-    visibility: visible;
-    transition: width $transition-speed, visibility $transition-speed, opacity $transition-speed;
-}
-
-input#search_toggle:checked ~ .search-icon {
-    background-position: -10px -276px; 
-}
-
-/* ============= // Search icon main page ============ */
 
 .site-description {
     background: #fff;

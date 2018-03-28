@@ -52,3 +52,7 @@ can have two values _new_ or _found_ - then the capsule bage is shown on the blo
 ## menu
 
 used for posts - making the related menu item active (to be developed)
+
+# Categories
+
+Categories are used for countries only. Each new country should be added to the /category/ folder as an empty file. The include "destinations-map.html" should be updated as well.

@@ -12,18 +12,12 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
             <header class="post-header">
-                <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+                <h1 class="post-title{% if page.capsule == 'new' %} capsule{% endif %}{% if page.capsule == 'found' %} capsule-found{% endif %}" itemprop="name headline">{{ page.title | escape }}</h1>
                 <p class="post-meta">
                     <time datetime="{{ page.date | date_to_long_string }}" itemprop="datePublished">
                         {{ page.date | date_to_long_string }}
                     </time>
                 </p>
-                {% if page.capsule == 'new' %}
-                    <span class="capsule"></span>
-                {% endif %}
-                {% if page.capsule == 'found' %}
-                    <span class="capsule-found"></span>
-                {% endif %}
             </header>
 
             <div class="post-content" itemprop="articleBody">
@@ -78,6 +72,8 @@
             {% endif %}
         </article>
     </main>
+    
+    <hr>
     
     {% include footer.html %}
 
