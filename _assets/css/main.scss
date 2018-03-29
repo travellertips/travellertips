@@ -475,7 +475,7 @@ span {
 
     .search-icon {
         @extend %sprite;
-        background-position: -12px -234px; 
+        background-position: -13px -234px; 
 
         display: inline-block;
         width: 42px;
@@ -546,9 +546,63 @@ span {
         @extend %sprite;
         background-position: -10px -276px; 
     }
+    
+    input[type="submit"] {
+        margin-left: 20px;
+        border-radius: 20px;
+        color: rgba($main-color, 0.7);
+        background-color: rgba($main-color, 0.08);
+        border-color: rgba($main-color, 0.2);
+        border-style: solid;
+        border-width: 1px;
+        height: 40px;
+        padding: 0.5em 0.8em;
+        cursor: pointer;
+        
+        &:hover,
+        &:active {
+            color: rgba($main-color, 0.8);
+            text-decoration: none;
+            background-color: rgba($main-color, 0.2);
+            border-color: rgba($main-color, 0.3);           
+        }
+    }
 }
 
 /* ============= // Search field general ============ */
+
+/* ============= Search Results page ================= */
+
+#search-results {
+    list-style-type: none;
+    margin-top: 2em;
+    padding: 0;
+    
+    li {
+        
+        h3 {
+            max-width: 220px;
+            padding-right: 0.5em;
+        }
+        margin: 1.5em 0;
+    }
+    
+    
+    .post-summary {
+        display: flex;
+        
+        p {
+            margin: 0;
+        }
+        
+        img {
+            max-width: 220px;
+            padding-right: $side-padding-medium;
+        }
+    }
+}
+
+/* ============= // Search Results page ============== */
 
 
 /* ============== Google map ==============*/
@@ -602,7 +656,7 @@ span {
 
 
 .travellertips-tipp {
-    padding-left: 50px;
+    padding-left: 55px;
     
     h3 {
         position: relative;
@@ -611,74 +665,74 @@ span {
             content: "";
             display: block;
             position: absolute;
-            top: 0;
-            left: -50px;
+            top: -5px;
+            left: -55px;
             width: 40px;
             height: 40px;
-            background-color: aqua;
             @extend %sprite;
         }
         
         &.BestTimeToVisit:before {
-            background-position: -87px -86px;
+            background-position: -81px -86px;
         }
         
         &.HowYouGetThePlace:before {
-            background-position: -87px -129px;
+            background-position: -82px -128px;
         }
         
         &.ClothesToPack:before {
-            background-position: -87px -86px;
+            background-position: -82px -168px;
         }
         
         &.EquipmentToHave:before {
-            background-position: -87px -86px;
+            background-position: -81px -207px;
         }
         
         &.BestPlacesToStay:before {
-            background-position: -87px -86px;
+            background-position: -81px -245px;
+            height: 34px;
         }
         
         &.WayToGoAround:before {
-            background-position: -87px -86px;
+            background-position: -81px -278px;
         }
         
         &.HoToGetVisa:before {
-            background-position: -87px -86px;
+            background-position: -81px -318px;
+            height: 32px;
+            top: 0;
         }
         
         &.DailyBudget:before {
-            background-position: -87px -86px;
+            background-position: -81px -349px;
         }
         
         &.UsefulResources:before {
-            background-position: -87px -86px;
+            background-position: -81px -390px;
         }
         
         &.UsefulContacts:before {
-            background-position: -87px -86px;
+            background-position: -81px -432px;
         }
         
         &.HelpfulVocabulary:before {
-            background-position: -87px -86px;
+            background-position: -8px -394px;
         }
         
         &.ExtremeExperience:before {
-            background-position: -87px -86px;
+            background-position: -8px -438px;
         }
         
         &.Photospots:before {
-            background-position: -87px -86px;
+            background-position: -8px -480px;
         }
         
         &.Nightlife:before {
-            background-position: -87px -86px;
+            background-position: -81px -478px;
         }
         
     }
 }
-
-
 
 /* ============== // Traveller Tipps ==============*/
 
