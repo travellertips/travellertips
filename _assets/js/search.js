@@ -5,6 +5,11 @@
 
     if (results.length) { // Are there any results?
       var appendString = '';
+    
+      var resultsNum = 10; // setting the number of search output, TODO: pagination of search
+      if (results.length > resultsNum) { 
+          results.length = resultsNum;
+      }
 
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = store[results[i].ref];
@@ -38,7 +43,7 @@
     document.getElementById('search-box').setAttribute("value", searchTerm);
       
       var idx = lunr(function () {
-            this.field('title', { boost: 10 });
+            this.field('title');
             this.field('keywords');
             this.field('summary');
             this.field('tags');
@@ -56,7 +61,7 @@
                 
             }
         });
-
+       
         var results = idx.search(searchTerm); // Get lunr to perform a search
         displaySearchResults(results, window.store); 
         

@@ -25,6 +25,10 @@ body {
     white-space: nowrap;
 }
 
+.text-center {
+    text-align: center;
+}
+
 a {
   color: $body-link-color;
   text-decoration: none;
@@ -348,7 +352,7 @@ hr {
     h2 {
 
         @include large {
-            font-size: 32px;
+        //    font-size: 32px;
             line-height: 36px;
         }
 
@@ -581,7 +585,7 @@ span {
     li {
         
         h3 {
-            max-width: 220px;
+           // max-width: 220px;
             padding-right: 0.5em;
         }
         margin: 1.5em 0;
@@ -597,7 +601,7 @@ span {
         
         img {
             max-width: 220px;
-            padding-right: $side-padding-medium;
+            padding-right: $side-padding-small;
         }
     }
 }
@@ -733,6 +737,24 @@ span {
         
     }
 }
+
+/* ============== About ===============*/
+
+ul.capsules-explained {
+    list-style-type: none;
+    margin-top: 2em;
+    
+    li {
+        position: relative;
+        margin: 2.5em 0;
+    }
+    
+    span.capsule, span.capsule-found {
+        left: -30px;
+    }
+}
+
+/* ============== // About ===============*/
 
 /* ============== // Traveller Tipps ==============*/
 

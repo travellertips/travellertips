@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   I try to find most interesting places during my trips for good photo and video materials. If you are a traveller and what to find the most interesting and 
   sometimes hidden places around the Globe - this website is a great starting point.
 #baseurl: "/" # the subpath of your site, e.g. /blog
-#url: "https://travellertips.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://travellertips.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: polinovskyi
 
 # Build settings
@@ -24,7 +24,7 @@ defaults:
     values:
       layout: "post"
 
-paginate: 2
+paginate: 6
 paginate_path: "/blog/page:num/"
 
 assets:

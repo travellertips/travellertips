@@ -47,34 +47,42 @@ menu: posts
 
 <p>It’s a great spot for abandoned places lovers.</p>
 
-<section class="travellertips">
-    <h2>Traveller tips</h2>
+{% include tips.html
+    BestTimeToVisit = '<p>I would say that the best time is summer, as you can have a picnic on the grass and swim in the lake.</p>'
+   
+    HowYouGetThePlace = ''
+       
+    ClothesToPack = ''
     
-    <h3>When is the best time to visit</h3>
-    <p>I would say that the best time is summer, as you can have a picnic on the grass and swim in the lake.</p>
+    EquipmentToHave = ''
     
-    <h3>Best places to stay</h3>
-    <p>The closest and quite cheap hotel is <a href="http://www.feriendorf-muess.de/" target="_blank">Feriendorf Muess</a>. In general, you’ll find hundreds of other options around Schwerin &mdash; just choose one according your budget and wishes.</p>
+    BestPlacesToStay = '<p>The closest and quite cheap hotel is <a href="http://www.feriendorf-muess.de/" target="_blank">Feriendorf Muess</a>. In general, you’ll find hundreds of other options around Schwerin &mdash; just choose one according your budget and wishes.</p>'
     
-    <h3>The way you can go around</h3>
-    <p>If you travel <b>by car</b> you can go by Autobahn A 24 Berlin-Hamburg in the direction Schwerin, then by the road A 14 you will be directly there: with the exit Schwerin Ost go out from Autobahn and follow the Bundesstraße 321 approximately 1,5 km in direction Schwerin/Zentrum. Shortly after passing the city entrance sign, turn right at the traffic lights (Netto Markt). After 350 meters you will see at the right the hotel Feriendorf Muess and the next street left &mdash; is the museum.</p>
-    <p>If you go by <b>public transport</b> from Schwerin, you can start at the main railway station (Schweriner Hauptbahnhof). There you take a tram No 1 in the direction of the Hegelstraße and go to the stop called Stauffenbergstraße. There you change to the Bus No 6 in the direction of the  Muess Ausbau and go to the Freilichtmuseum stop. There you can easely find a way to the Museum.</p>
+    WayToGoAround = '<p>If you travel <b>by car</b> you can go by Autobahn A 24 Berlin-Hamburg in the direction Schwerin, then by the road A 14 you will be directly there: with the exit Schwerin Ost go out from Autobahn and follow the Bundesstraße 321 approximately 1,5 km in direction Schwerin/Zentrum. Shortly after passing the city entrance sign, turn right at the traffic lights (Netto Markt). After 350 meters you will see at the right the hotel Feriendorf Muess and the next street left &mdash; is the museum.</p>
+    <p>If you go by <b>public transport</b> from Schwerin, you can start at the main railway station (Schweriner Hauptbahnhof). There you take a tram No 1 in the direction of the Hegelstraße and go to the stop called Stauffenbergstraße. There you change to the Bus No 6 in the direction of the  Muess Ausbau and go to the Freilichtmuseum stop. There you can easely find a way to the Museum.</p>'
     
-    <h3>Suggested daily budget</h3>
-    <p>If you visit the place alone you don’t need much money. The entrance price is just 5 EUR for adult, 0-2 EUR for kids and 10 EUR for a family. To get from Schwerin to Museum will cost you 2.80 EUR in one way or you can take a day ticket for Zone 1 and Zone 2 for 8.40 EUR. Other details you can find on the <a href="http://www.nahverkehr-schwerin.de/tarif/tarifubersicht/" target="_blank">Schwerin Public Transport website</a>. If we assume that you start your trip from Schwerin, having 3 meals per diem in middle-range or fast-food restaurants, and have a night in hotel of economy class, the your total budget would start at <b>~75 EUR</b>.
-</p>
+    HoToGetVisa = ''
     
-    <h3>Useful resources</h3>
-    <p><a href="https://www.schwerin.de/kultur-tourismus/kunst-kultur/bildende-kunst-museen/freilichtmuseum-schwerin-muess/oeffnungszeiten-preise-anfahrt/" target="_blank">Information about Museum</a> </p>
-    <p><a href="http://www.nahverkehr-schwerin.de/" target="_blank">Schwerin Public Transport website</a></p>
-</section>
+    DailyBudget = '<p>If you visit the place alone you don’t need much money. The entrance price is just 5 EUR for adult, 0-2 EUR for kids and 10 EUR for a family. To get from Schwerin to Museum will cost you 2.80 EUR in one way or you can take a day ticket for Zone 1 and Zone 2 for 8.40 EUR. Other details you can find on the <a href="http://www.nahverkehr-schwerin.de/tarif/tarifubersicht/" target="_blank">Schwerin Public Transport website</a>. If we assume that you start your trip from Schwerin, having 3 meals per diem in middle-range or fast-food restaurants, and have a night in hotel of economy class, the your total budget would start at <b>~75 EUR</b>.</p>'
+    
+    UsefulResources = '
+        <ul>
+            <li><a href="https://www.schwerin.de/kultur-tourismus/kunst-kultur/bildende-kunst-museen/freilichtmuseum-schwerin-muess/oeffnungszeiten-preise-anfahrt/" target="_blank">Information about Museum</a></li>
+            <li><a href="http://www.nahverkehr-schwerin.de/" target="_blank">Schwerin Public Transport website</a></li>
+        </ul>'
+    
+    UsefulContacts = ''
+    
+    HelpfulVocabulary = ''
 
-<div class="share-page">
-    Share this on &rarr;
-    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
-    <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
-    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
-</div>
+    ExtremeExperience = ''
+    
+    Photospots = ''
+    
+    Nightlife = ''
+ %}
+
+{% include share.html %}
         
         
 

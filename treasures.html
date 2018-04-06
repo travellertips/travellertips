@@ -5,10 +5,64 @@ permalink: /treasures/
 navigation_weight: 4
 ---
 
-<p>This is page with posts with capsule</p>
+<p>Here you can find posts with hidden Treasures. Please read <a href="/about/">About</a> to get more insight.</p>
 
+<section class="all-posts"> 
+    <h2 class="text-center">New treasures</h2>
+    
+    <ul>
+    {% for post in site.posts %}
+        {% if post.capsule == 'new' %}
+        <li>
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            {% if post.thumbnail %}
+                <a href="{{ post.url }}" class="post-thumb">
+                    <span class="capsule"></span>
+                    {% asset {{post.thumbnail}} alt="{{post.title}}" %}
+                </a>
+            {% endif %}
+            {% if post.date %}
+                <time datetime="{{ post.date | date_to_long_string }}" itemprop="datePublished">
+                    {{ post.date | date_to_long_string }}
+                </time>
+            {% endif %}
+            {% if post.summary %}
+                <p>
+                    {{ post.summary | truncate: 100 }}
+                </p>
+            {% endif %}
+        </li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+</section>
 
-{% include map.html 
-    place_id="ChIJ9Z59XbEDmkcRL1pF2TBwziI" 
-    img="thumbnails650/hohenzollern2-thumb.jpg" 
-%} 
+<section class="all-posts"> 
+    <h2 class="text-center">Found treasures</h2>
+    
+    <ul>
+    {% for post in site.posts %}
+        {% if post.capsule == 'found' %}
+        <li>
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            {% if post.thumbnail %}
+                <a href="{{ post.url }}" class="post-thumb">
+                    <span class="capsule-found"></span>
+                    {% asset {{post.thumbnail}} alt="{{post.title}}" %}
+                </a>
+            {% endif %}
+            {% if post.date %}
+                <time datetime="{{ post.date | date_to_long_string }}" itemprop="datePublished">
+                    {{ post.date | date_to_long_string }}
+                </time>
+            {% endif %}
+            {% if post.summary %}
+                <p>
+                    {{ post.summary | truncate: 100 }}
+                </p>
+            {% endif %}
+        </li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+</section>
