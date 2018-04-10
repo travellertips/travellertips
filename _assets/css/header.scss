@@ -47,8 +47,8 @@
 .logo {
     @extend %sprite;
     display: inline-block;
-    width: 130px;
-    height: 82px;
+    width: 247px;
+    height: 48px;
 }
 
 .gallery-header {
@@ -95,17 +95,17 @@
 
 .instagram {
     @extend %sprite;
-    background-position: -13px -188px;
+    background-position: -8px -160px;
 }
 
 .facebook {
     @extend %sprite;
-    background-position: -13px -141px;    
+    background-position: -8px -113px;    
 }
 
 .twitter {
     @extend %sprite;
-    background-position: -13px -94px;    
+    background-position: -8px -66px;    
 }
 
 .site-description {

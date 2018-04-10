@@ -82,7 +82,7 @@ hr {
         width: 27px;
         height: 54px;
         @extend %sprite;
-        background-position: -10px -333px;
+        background-position: -5px -304px;
         position: absolute;
         top: calc(50% - 27px);
         left: 24px;
@@ -397,20 +397,20 @@ span {
     &.capsule,
     &.capsule-found {
         position: absolute;
-        top: -12px;
+        top: -15px;
         left: -2px;
         transform: rotate(-20deg);
 
         display: block;
-        width: 17px;
-        height: 62px;
+        width: 19px;
+        height: 65px;
 
         @extend %sprite;
-        background-position: -55px -388px;
+        background-position: -18px -372px;
     }
 
     &.capsule-found {
-        background-position: -55px -452px;
+        background-position: -17px -442px;
     }
 }
 
@@ -422,18 +422,18 @@ span {
     &.capsule-found:after {
         content: "";
         display: block;
-        width: 17px;
-        height: 62px;
+        width: 19px;
+        height: 65px;
         transform: rotate(-20deg);
         position: absolute;
         right: -40px;
         top: -7px;
         @extend %sprite;
-        background-position: -55px -388px;
+        background-position: -18px -372px;
     }
     
     &.capsule-found:after {
-        background-position: -55px -452px;
+        background-position: -17px -442px;
     }
 }
 
@@ -479,7 +479,7 @@ span {
 
     .search-icon {
         @extend %sprite;
-        background-position: -13px -234px; 
+        background-position: -8px -206px; 
 
         display: inline-block;
         width: 42px;
@@ -517,7 +517,7 @@ span {
     }
 
     input#search_toggle:checked ~ .search-icon {
-        background-position: -10px -276px; 
+        background-position: -5px -248px; 
     }
 }
 
@@ -548,7 +548,7 @@ span {
         height: 40px;
         display: block;
         @extend %sprite;
-        background-position: -10px -276px; 
+        background-position: -8px -248px; 
     }
     
     input[type="submit"] {
@@ -677,62 +677,62 @@ span {
         }
         
         &.BestTimeToVisit:before {
-            background-position: -81px -86px;
+            background-position: -54px -56px;
         }
         
         &.HowYouGetThePlace:before {
-            background-position: -82px -128px;
+            background-position: -56px -97px;
         }
         
         &.ClothesToPack:before {
-            background-position: -82px -168px;
+            background-position: -56px -137px;
         }
         
         &.EquipmentToHave:before {
-            background-position: -81px -207px;
+            background-position: -56px -176px;
         }
         
         &.BestPlacesToStay:before {
-            background-position: -81px -245px;
+            background-position: -56px -215px;
             height: 34px;
         }
         
         &.WayToGoAround:before {
-            background-position: -81px -278px;
+            background-position: -56px -248px;
         }
         
         &.HoToGetVisa:before {
-            background-position: -81px -318px;
+            background-position: -56px -288px;
             height: 32px;
             top: 0;
         }
         
         &.DailyBudget:before {
-            background-position: -81px -349px;
+            background-position: -56px -318px;
         }
         
         &.UsefulResources:before {
-            background-position: -81px -390px;
+            background-position: -56px -360px;
         }
         
         &.UsefulContacts:before {
-            background-position: -81px -432px;
+            background-position: -56px -402px;
         }
         
         &.HelpfulVocabulary:before {
-            background-position: -8px -394px;
+            background-position: -56px -489px;
         }
         
         &.ExtremeExperience:before {
-            background-position: -8px -438px;
+            background-position: -56px -533px;
         }
         
         &.Photospots:before {
-            background-position: -8px -480px;
+            background-position: -56px -574px;
         }
         
         &.Nightlife:before {
-            background-position: -81px -478px;
+            background-position: -56px -447px;
         }
         
     }
