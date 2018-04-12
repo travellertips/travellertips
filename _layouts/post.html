@@ -13,11 +13,17 @@
 
             <header class="post-header">
                 <h1 class="post-title{% if page.capsule == 'new' %} capsule{% endif %}{% if page.capsule == 'found' %} capsule-found{% endif %}" itemprop="name headline">{{ page.title | escape }}</h1>
-                <p class="post-meta">
+                <div class="post-meta">
+                    <p class="post-author">
+                        by <a class="navlink" href="{{ page.authorlink }}">{{ page.author }}</a>
+                    </p>
                     <time datetime="{{ page.date | date_to_long_string }}" itemprop="datePublished">
                         {{ page.date | date_to_long_string }}
                     </time>
-                </p>
+                </div>
+                {% if page.pdfguide!=null %}
+                    {% include download-button.html guide=page.pdfguide %} 
+                {% endif %}
             </header>
 
             <div class="post-content" itemprop="articleBody">

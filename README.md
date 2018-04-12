@@ -48,6 +48,10 @@ path to related to post thumbnail (320 px in width) images - used on related art
 ## capsule
 
 can have two values _new_ or _found_ - then the capsule bage is shown on the blog article, showing if the treasure capsule was applied or has been already found
+
+## pdfguide
+
+name of the pdf file of the pocket guide
     
 ## menu
 
