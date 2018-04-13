@@ -21,6 +21,10 @@
             display: inline-block;
             margin-left: 25px;
             
+            @include great {
+                margin-left: 15px;
+            }
+            
             @include medium {
                 margin: 0.5em;
                 display: block;
@@ -36,6 +40,10 @@
         
         &.active {
             text-decoration: underline;
+        }
+        
+        @include great {
+            font-size: 20px;
         }
     }
 

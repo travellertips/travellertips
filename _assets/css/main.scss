@@ -15,6 +15,12 @@ body {
   color: $body-text-color;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .reader {
     visibility: hidden;
     width: 1px;
@@ -58,21 +64,24 @@ hr {
 /* =========== // NAVIGATION ==============*/
 
 .post-header {
-    position: relative;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     
-    .download-guide {
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        
+    .download-guide { 
         @include medium {
-            position: static;
             margin-top: 1em;
         }
         
     }
+}
+
+.post-subheader-left,
+post-subheader-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.post-subheader-right {
+    float: right;
 }
 
 .post-meta {
@@ -197,14 +206,17 @@ hr {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
+    line-height: normal;
     color: $section-headings-color;
   }
   
     .post{
         
         h1 {
-          color: $heading-color;
-            margin-bottom: 0.2em;
+            display: block;
+            position: relative;
+            padding-left: 40px;
+            color: $heading-color;
         }
     }
 
@@ -386,8 +398,8 @@ hr {
     h2 {
         
         @include huge {
-            font-size: 50px;
-            line-height: 54px;
+            font-size: 40px;
+            line-height: 44px;
         }
 
         @include large {
@@ -480,13 +492,20 @@ span {
         @extend %sprite;
         background-position: -18px -372px;
     }
-
+    
     &.capsule-found {
         background-position: -17px -442px;
     }
 }
 
-.post-title {
+.post-title span {
+    &.capsule,
+    &.capsule-found {
+        top: -10px;
+    }
+}
+
+/*.post-title {
     position: relative;
     display: inline-block;
     
@@ -508,8 +527,62 @@ span {
         background-position: -17px -442px;
     }
 }
-
+*/
 /* ============== // CAPSULE =================*/
+
+/* ============== TOOLTIP =================*/
+
+.tooltip:before,
+.tooltip:after {
+    position: absolute; 
+    transform: rotate(20deg) translate3d(0,0,0);
+    transition-delay: 0.5s;
+    transition: all $transition-speed ease-out;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10000;
+}
+
+
+.tooltip:before {
+    content: "";
+    width: 0;
+    height: 0;
+    margin-left: -5px;
+    top: -15px;
+    left: 15px;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: $section-headings-color transparent transparent transparent;
+
+}
+
+.tooltip:after {
+    font-size: 12px;
+    content: attr(data-tooltip);
+    color: #fff;
+    display: block;
+    width: 200px;
+    height: 50px;
+    padding: 8px;
+    top: -48px;
+    left: 5px;
+    background: $section-headings-color;
+    border-radius: 4px;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.tooltip:hover:after { 
+    opacity: 1;
+    visibility: visible;
+}
+
+.tooltip:hover:before { 
+    opacity: 1;
+}
+
+/* ============== // TOOLTIP =================*/
 
 /* ============== PAGINATION =================*/
 
@@ -606,6 +679,11 @@ span {
     border-radius: 20px;
     z-index: 0;
     background: #fff;
+    transition: all $transition-speed linear;
+}
+
+#search-box:focus {
+    border-color: $dark;
 }
 
 .search-wrapper {
@@ -663,7 +741,15 @@ span {
         margin: 1.5em 0;
     }
     
-    
+    a {
+        color: $body-text-color;
+
+        &:hover {
+            color: $dark;
+            text-decoration: none;
+        }
+    }
+      
     .post-summary {
         display: flex;
         
@@ -672,7 +758,7 @@ span {
         }
         
         img {
-            max-width: 220px;
+            max-width: 250px;
             padding-right: $side-padding-small;
         }
     }

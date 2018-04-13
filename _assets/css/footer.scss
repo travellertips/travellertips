@@ -22,3 +22,14 @@
 .site-footer-credits {
   color: $blockquote-text-color;
 }
+
+.footer-nav {
+    a {
+        font-size: 16px;
+        margin-left: $side-padding-medium;
+        
+        &:first-child {
+            margin: 0;
+        }
+    }
+}

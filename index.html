@@ -12,10 +12,10 @@ title: Home
                 {% if post.thumbnail %}
                     <a href="{{ post.url }}" class="post-thumb">
                         {% if post.capsule == 'new' %}
-                            <span class="capsule"></span>
+                            <span class="capsule tooltip" data-tooltip="In this place the treasure is hidden! See About page for more info."></span>
                         {% endif %}
                         {% if post.capsule == 'found' %}
-                            <span class="capsule-found"></span>
+                            <span class="capsule-found tooltip" data-tooltip="In this place the treasure was found! See About page for more info."></span>
                         {% endif %}
                         {% asset {{post.thumbnail}} alt="{{post.title}}" %}
                     </a>
