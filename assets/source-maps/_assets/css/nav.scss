@@ -1,5 +1,6 @@
 .main-nav {
     background: #fff;
+    z-index: 2;
     
     @include medium {
         position: absolute;
@@ -20,6 +21,10 @@
             display: inline-block;
             margin-left: 25px;
             
+            @include great {
+                margin-left: 15px;
+            }
+            
             @include medium {
                 margin: 0.5em;
                 display: block;
@@ -30,11 +35,15 @@
     
     a {
         color: $main-nav-color;
-        font-size: 24px;
+        font-size: 23px;
         cursor: pointer;
         
         &.active {
             text-decoration: underline;
+        }
+        
+        @include great {
+            font-size: 20px;
         }
     }
 

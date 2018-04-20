@@ -47,23 +47,115 @@
 .logo {
     @extend %sprite;
     display: inline-block;
-    width: 300px;
-    height: 60px;
-    
-    @include small {
-        width: 240px;
-        height: 45px;
-        background-size: 95%;
-    }
+    width: 247px;
+    height: 48px;
 }
 
+/* Animate background */
+
 .gallery-header {
-    background: url(asset_path('background2.jpg')) no-repeat;
     background-position: center;
     background-size: cover;
     min-height: calc(100vh - 80px);
     display: flex;
-//    margin-bottom: 80px;
+}
+
+
+// Hack to preload all images to avoid blinking
+
+body::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Load mobile backgrounds */ 
+@media screen and (max-width: #{$medium-breakpoint}) {
+    
+    body::after {
+        content: url(asset_path('background7_mob.jpg')) url(asset_path('background6_mob.jpg')) url(asset_path('background5_mob.jpg')) url(asset_path('background4_mob.jpg')) url(asset_path('background3_mob.jpg')) url(asset_path('background2_mob.jpg')) url(asset_path('background1_mob.jpg'));
+    }
+    
+    .gallery-header {
+        animation-name: headerImageGallery_mob;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 40s;
+    }
+     
+    @keyframes headerImageGallery_mob {
+      0%, 4.76%, 9.52% {
+        background-image: url(asset_path('background1_mob.jpg'));
+      }
+      14.28%, 19.04%, 23.8% {
+        background-image: url(asset_path('background2_mob.jpg'));
+      }
+      28.56%, 33.32%, 38.08% {
+        background-image: url(asset_path('background3_mob.jpg'));
+      }
+      42.84%, 47.6%, 52.36% {
+        background-image: url(asset_path('background4_mob.jpg'));
+      }
+      57.12%, 61.88%, 66.64% {
+        background-image: url(asset_path('background5_mob.jpg'));
+      }  
+      71.4%, 76.16%, 80.92% {
+        background-image: url(asset_path('background6_mob.jpg'));
+      }  
+      85.68%, 90.44%, 95.2% {
+        background-image: url(asset_path('background7_mob.jpg'));
+      } 
+      100% {
+        background-image: url(asset_path('background1_mob.jpg'));
+      }  
+
+    }
+}
+
+/* Load big backgrounds */ 
+@media screen and (min-width: #{$medium-breakpoint}) {
+    
+    body::after {
+        content: url(asset_path('background7.jpg')) url(asset_path('background6.jpg')) url(asset_path('background5.jpg')) url(asset_path('background4.jpg')) url(asset_path('background3.jpg')) url(asset_path('background2.jpg')) url(asset_path('background1.jpg'));
+    }
+    
+    .gallery-header {
+        animation-name: headerImageGallery;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 40s;
+    }
+    
+    @keyframes headerImageGallery {
+      0%, 4.76%, 9.52% {
+        background-image: url(asset_path('background1.jpg'));
+      }
+      14.28%, 19.04%, 23.8% {
+        background-image: url(asset_path('background2.jpg'));
+      }
+      28.56%, 33.32%, 38.08% {
+        background-image: url(asset_path('background3.jpg'));
+      }
+      42.84%, 47.6%, 52.36% {
+        background-image: url(asset_path('background4.jpg'));
+      }
+      57.12%, 61.88%, 66.64% {
+        background-image: url(asset_path('background5.jpg'));
+      }  
+      71.4%, 76.16%, 80.92% {
+        background-image: url(asset_path('background6.jpg'));
+      }  
+      85.68%, 90.44%, 95.2% {
+        background-image: url(asset_path('background7.jpg'));
+      } 
+      100% {
+        background-image: url(asset_path('background1.jpg'));
+      }  
+
+    }
 }
 
 .social-buttons {
@@ -93,28 +185,44 @@
         width: 42px;
         height: 42px;
         margin: 0.5em 0;
+        opacity: 0.8;
+        transition: all $transition-speed ease-out;
+        
+        &:hover {
+            opacity: 1;    
+        }
+    }
+    
+    .search {
+        position: relative;
+        opacity: 0.8;
+        transition: all $transition-speed ease-out;
+        
+        &:hover {
+            opacity: 1;    
+        }
     }
 }
 
 .instagram {
     @extend %sprite;
-    background-position: -13px -130px;
+    background-position: -8px -160px;
+}
+
+.facebook {
+    @extend %sprite;
+    background-position: -8px -113px;    
 }
 
 .twitter {
     @extend %sprite;
-    background-position: -13px -185px;    
-}
-
-.linkedin {
-    @extend %sprite;
-    background-position: -13px -249px;    
+    background-position: -8px -66px;    
 }
 
 .site-description {
     background: #fff;
     font-size: $large-font-size;
-    margin: -6vw auto 0;
+    margin: -6vh auto 0;
     padding: 1.5em 2em 0;
     
     @include huge {

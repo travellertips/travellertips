@@ -15,6 +15,12 @@ body {
   color: $body-text-color;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .reader {
     visibility: hidden;
     width: 1px;
@@ -25,6 +31,10 @@ body {
     white-space: nowrap;
 }
 
+.text-center {
+    text-align: center;
+}
+
 a {
   color: $body-link-color;
   text-decoration: none;
@@ -32,6 +42,17 @@ a {
   &:hover {
     text-decoration: underline;
   }
+    
+    &.navlink {
+        color: $navlink-color;
+    }    
+}
+
+hr {
+    border: none;
+    height: 4px;
+    background: url(asset_path('stroke.svg'));
+    background-repeat: repeat;  
 }
 
 /* ============== HEADER ==============*/
@@ -41,6 +62,39 @@ a {
 /* ============== NAVIGATION ==============*/
 @import "nav";
 /* =========== // NAVIGATION ==============*/
+
+.post-header {
+    margin-bottom: 1em;
+    
+    .download-guide { 
+        @include medium {
+            margin-top: 1em;
+        }
+        
+    }
+}
+
+.post-subheader-left,
+post-subheader-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.post-subheader-right {
+    float: right;
+}
+
+.post-meta {
+    font-size: 0.8em;
+    
+    .post-author {
+        margin-bottom: 0.2em;
+    }
+    
+    time {
+        font-style: italic;
+    }
+}
 
 .gmap_canvas img {
     max-width:none!important;
@@ -54,10 +108,12 @@ a {
 }
 
 .tipp {
+    display: flex;
+    align-items: center;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     padding: 1em 1em 1em 4em;
-    min-height: 8.5em;
+    min-height: 5.5em;
     border: 1px solid $border-color;
     color: $tipp-text-color;
     background: $tipp-bg-color;
@@ -66,12 +122,12 @@ a {
     &::after {
         content: "";
         display: block;
-        width: 20px;
-        height: 86px;
+        width: 27px;
+        height: 54px;
         @extend %sprite;
-        background-position: -88px -62px;
+        background-position: -5px -304px;
         position: absolute;
-        top: 22px;
+        top: calc(50% - 27px);
         left: 24px;
     }
     
@@ -80,72 +136,25 @@ a {
     }
 }
 
-/*
-
-.btn {
-  display: inline-block;
-  margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0.3rem;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-
-  &:hover {
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
-  }
-
-  + .btn {
-    margin-left: 1rem;
-  }
-
-  @include huge {
-    padding: 0.75rem 1rem;
-  }
-
-  @include large {
-    padding: 0.6rem 0.9rem;
-    font-size: 0.9rem;
-  }
-
-  @include medium {
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 0.9rem;
-
-    + .btn {
-      margin-top: 1rem;
-      margin-left: 0;
-    }
-  }
-}
-
-*/
-
-.button {
+.button,
+.download-button {
     display: inline-block;
     margin-bottom: 1rem;
     line-height: normal;
     padding: 0.5em;
-    color: rgba($main-color, 0.7);
-    background-color: rgba($main-color, 0.08);
-    border-color: rgba($main-color, 0.2);
+    color: $body-text-color;
+    background-color: #fff;
+    border-color: $border-color;
     border-style: solid;
     border-width: 1px;
     border-radius: 0.3rem;
     transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 
     &:hover {
-        color: rgba($main-color, 0.8);
+        color: $main-color;
         text-decoration: none;
-        background-color: rgba($main-color, 0.2);
-        border-color: rgba($main-color, 0.3);
+        background-color: $main-color-background;
+        border-color: $main-color-border;
     }    
 }
 
@@ -177,8 +186,19 @@ a {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
+    line-height: normal;
     color: $section-headings-color;
   }
+  
+    .post{
+        
+        h1 {
+            display: block;
+            position: relative;
+            padding-left: 40px;
+            color: $heading-color;
+        }
+    }
 
   p {
     margin-bottom: 1em;
@@ -289,11 +309,7 @@ a {
   }
 
   hr {
-    height: 2px;
-    padding: 0;
-    margin: 1rem 0;
-    background-color: $hr-border-color;
-    border: 0;
+    margin: 2em 0;
   }
 }
 
@@ -321,6 +337,10 @@ a {
                 padding: 0;
             }
             
+            h2 {
+                margin-top: auto !important; /* To move down headers to the picture */
+            }
+            
             &:nth-child(2n) {
                 padding-right: 0;
                 padding-left: 25px;
@@ -331,7 +351,6 @@ a {
             }
             
             a {
-                margin-top: auto;
                 color: $body-text-color;
                 
                 &:hover {
@@ -340,12 +359,17 @@ a {
                 }
             }
             
+            .post-thumb {
+                position: relative;
+            }
+            
         }
 
     }    
 }
 
-.recent-posts {
+.recent-posts,
+.destinations {
     
     h1 {
         text-align: center;
@@ -354,8 +378,8 @@ a {
     h2 {
         
         @include huge {
-            font-size: 50px;
-            line-height: 54px;
+            font-size: 40px;
+            line-height: 44px;
         }
 
         @include large {
@@ -383,7 +407,7 @@ a {
     h2 {
 
         @include large {
-            font-size: 32px;
+        //    font-size: 32px;
             line-height: 36px;
         }
 
@@ -394,6 +418,332 @@ a {
     }
     
 }
+
+.related-posts-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+    > div {
+        width: 33%;
+        margin-left: 1em;
+        
+        &:first-child {
+            margin: 0;
+        }
+        
+        @include medium {
+            width: 100%;
+        }
+    }
+    
+    a {
+        color: $body-text-color;
+
+        &:hover {
+            color: $dark;
+            text-decoration: none;
+        }
+    }
+    
+    h3 {
+
+        @include medium {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+}
+
+/* ============== CAPSULE =================*/
+
+span {
+    &.capsule,
+    &.capsule-found {
+        position: absolute;
+        top: -15px;
+        left: -15px;
+
+        display: block;
+        width: 38px;
+        height: 65px;
+
+        @extend %sprite;
+        background-position: -8px -372px;
+    }
+    
+    &.capsule-found {
+        background-position: -8px -442px;
+    }
+}
+
+.post-title span {
+    &.capsule,
+    &.capsule-found {
+        top: -10px;
+    }
+}
+
+/* ============== // CAPSULE =================*/
+
+/* ============== TOOLTIP =================*/
+
+.tooltip:before,
+.tooltip:after {
+    position: absolute; 
+    transform: translate3d(0,0,0);
+    transition: all $transition-speed ease-out 0.5s;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10000;
+}
+
+
+.tooltip:before {
+    content: "";
+    width: 0;
+    height: 0;
+    margin-left: -5px;
+    top: -15px;
+    left: 15px;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: $section-headings-color transparent transparent transparent;
+
+}
+
+.tooltip:after {
+    font-size: 12px;
+    content: attr(data-tooltip);
+    color: #fff;
+    display: block;
+    width: 200px;
+    height: 50px;
+    padding: 8px;
+    top: -80px;
+    left: 0;
+    background: $section-headings-color;
+    border-radius: 4px;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.tooltip:hover:after { 
+    opacity: 1;
+    visibility: visible;
+}
+
+.tooltip:hover:before { 
+    opacity: 1;
+}
+
+/* ============== // TOOLTIP =================*/
+
+/* ============== PAGINATION =================*/
+
+.pagination {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 2em;
+    
+    > * {
+        padding: 0 10px;
+    }
+    
+    a, span,
+    a:hover,
+    a:active {
+        color: $main-nav-color;
+        text-decoration: none;
+    }
+    
+    .current-page,
+    a:not(.next):not(.prev):hover {
+        border-top: 3px solid $main-color;
+    }
+    
+}
+
+/* ============= // PAGINATION ================*/
+
+/* ============= Search icon main page ============ */
+
+.gallery-header {
+    .search input[type="submit"] {
+        display: none;
+    }
+
+    #search_toggle {
+        display: none;
+    }
+
+    .search-icon {
+        @extend %sprite;
+        background-position: -8px -206px; 
+
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        margin-top: 1.5em;
+        position: absolute;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    #search-box {
+        width: 0;
+        visibility: hidden;
+        opacity: 0;
+        border: none;
+        display: inline-block;
+        padding: 0;
+        position: absolute;
+        height: 40px;
+        border-radius: 20px;
+        top: 25px;
+        left: 0;
+        z-index: 0;
+        background: #fff;
+        transition: width $transition-speed, visibility $transition-speed, opacity $transition-speed;
+    }
+
+    input#search_toggle:checked + #search-box {
+        padding: 0.1em 0.8em 0.1em 2.8em;
+        position: absolute;
+        width: 400px;
+        opacity: 1;
+        visibility: visible;
+        transition: width $transition-speed, visibility $transition-speed, opacity $transition-speed;
+    }
+
+    input#search_toggle:checked ~ .search-icon {
+        background-position: -5px -248px; 
+    }
+}
+
+/* ============= // Search icon main page ============ */
+
+/* ============= Search field general ============== */
+
+#search-box {
+    width: 400px;
+    padding: 0.1em 0.8em 0.1em 2.8em;
+    border: 1px solid $border-color;
+    display: inline-block;
+    height: 40px;
+    border-radius: 20px;
+    z-index: 0;
+    background: #fff;
+    transition: all $transition-speed linear;
+    
+    @include huge {
+        max-width: 420px;
+    }
+    
+    @include medium {
+        max-width: 370px;
+    }
+    
+    @include small {
+        max-width: 300px;
+    }
+}
+
+#search-box:focus {
+    border-color: $dark;
+}
+
+.search-wrapper {
+    display: inline-block;
+    position: relative;
+    
+    label {
+        position: absolute;
+        top: -1px;
+        left: 3px;
+        width: 40px;
+        height: 40px;
+        display: block;
+        @extend %sprite;
+        background-position: -8px -248px; 
+    }
+    
+    input[type="submit"] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        height: 40px;
+        padding: 0.5em 0.8em;
+        color: $body-text-color;
+        background-color: #fff;
+        border-color: $border-color;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 0 20px 20px 0;
+        transition: color $transition-speed, background-color $transition-speed, border-color $transition-speed;
+
+        &:hover,
+        &:active {
+            color: rgba($main-color, 0.8);
+            text-decoration: none;
+            background-color: rgba($main-color, 0.2);
+            border-color: rgba($main-color, 0.3);
+        }   
+        
+    }
+}
+
+/* ============= // Search field general ============ */
+
+/* ============= Search Results page ================= */
+
+#search-results {
+    list-style-type: none;
+    margin-top: 2em;
+    padding: 0;
+    
+    li {
+        margin: 1.5em 0;
+    }
+    
+    a {
+        color: $body-text-color;
+
+        &:hover {
+            color: $dark;
+            text-decoration: none;
+        }
+    }
+      
+    .post-summary {
+        display: flex;
+        
+        p {
+            margin: 0;
+        }
+        
+        img {
+            max-width: 250px;
+            padding-right: $side-padding-small;
+        }
+        
+        @include medium {
+            display: block;
+            
+            p {
+                margin-top: 1em;
+            }
+            
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+/* ============= // Search Results page ============== */
+
 
 /* ============== Google map ==============*/
 
@@ -412,6 +762,7 @@ a {
         opacity: 0.5;
         background: #fff;
         z-index: 1;
+
     }
     
     .button-wrapper {
@@ -441,6 +792,108 @@ a {
 
 
 /* ============== // Google map ==============*/
+
+/* ============== Traveller Tipps ================*/
+
+
+.travellertips-tipp {
+    padding-left: 55px;
+    
+    h3 {
+        position: relative;
+        
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -5px;
+            left: -55px;
+            width: 40px;
+            height: 40px;
+            @extend %sprite;
+        }
+        
+        &.BestTimeToVisit:before {
+            background-position: -54px -56px;
+        }
+        
+        &.HowYouGetThePlace:before {
+            background-position: -56px -97px;
+        }
+        
+        &.ClothesToPack:before {
+            background-position: -56px -137px;
+        }
+        
+        &.EquipmentToHave:before {
+            background-position: -56px -176px;
+        }
+        
+        &.BestPlacesToStay:before {
+            background-position: -56px -215px;
+            height: 34px;
+        }
+        
+        &.WayToGoAround:before {
+            background-position: -56px -248px;
+        }
+        
+        &.HoToGetVisa:before {
+            background-position: -56px -288px;
+            height: 32px;
+            top: 0;
+        }
+        
+        &.DailyBudget:before {
+            background-position: -56px -318px;
+        }
+        
+        &.UsefulResources:before {
+            background-position: -56px -360px;
+        }
+        
+        &.UsefulContacts:before {
+            background-position: -56px -402px;
+        }
+        
+        &.HelpfulVocabulary:before {
+            background-position: -56px -489px;
+        }
+        
+        &.ExtremeExperience:before {
+            background-position: -56px -533px;
+        }
+        
+        &.Photospots:before {
+            background-position: -56px -574px;
+        }
+        
+        &.Nightlife:before {
+            background-position: -56px -447px;
+        }
+        
+    }
+}
+
+/* ============== About ===============*/
+
+ul.capsules-explained {
+    list-style-type: none;
+    margin-top: 2em;
+    
+    li {
+        position: relative;
+        margin: 2.5em 0;
+    }
+    
+    span.capsule, span.capsule-found {
+        left: -40px;
+    }
+}
+
+/* ============== // About ===============*/
+
+/* ============== // Traveller Tipps ==============*/
 
 /* ============== FOOTER ==============*/
 @import "footer";

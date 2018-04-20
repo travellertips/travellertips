@@ -6,6 +6,12 @@
   }
 }
 
+@mixin great {
+  @media screen and (max-width: #{$great-breakpoint}) {
+    @content;
+  }
+}
+
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) and (max-width: #{$huge-breakpoint}) {
     @content;
