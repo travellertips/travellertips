@@ -54,38 +54,109 @@
 /* Animate background */
 
 .gallery-header {
-  //  background: url(asset_path('background2.jpg')) no-repeat;
     background-position: center;
     background-size: cover;
     min-height: calc(100vh - 80px);
     display: flex;
-  //  transition: background-image $transition-speed ease-in-out;
+}
+
+
+// Hack to preload all images to avoid blinking
+
+body::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Load mobile backgrounds */ 
+@media screen and (max-width: #{$medium-breakpoint}) {
     
-    animation-name: headerImageGallery;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
-    animation-direction: alternate;
+    body::after {
+        content: url(asset_path('background7_mob.jpg')) url(asset_path('background6_mob.jpg')) url(asset_path('background5_mob.jpg')) url(asset_path('background4_mob.jpg')) url(asset_path('background3_mob.jpg')) url(asset_path('background2_mob.jpg')) url(asset_path('background1_mob.jpg'));
+    }
+    
+    .gallery-header {
+        animation-name: headerImageGallery_mob;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 40s;
+    }
+     
+    @keyframes headerImageGallery_mob {
+      0%, 4.76%, 9.52% {
+        background-image: url(asset_path('background1_mob.jpg'));
+      }
+      14.28%, 19.04%, 23.8% {
+        background-image: url(asset_path('background2_mob.jpg'));
+      }
+      28.56%, 33.32%, 38.08% {
+        background-image: url(asset_path('background3_mob.jpg'));
+      }
+      42.84%, 47.6%, 52.36% {
+        background-image: url(asset_path('background4_mob.jpg'));
+      }
+      57.12%, 61.88%, 66.64% {
+        background-image: url(asset_path('background5_mob.jpg'));
+      }  
+      71.4%, 76.16%, 80.92% {
+        background-image: url(asset_path('background6_mob.jpg'));
+      }  
+      85.68%, 90.44%, 95.2% {
+        background-image: url(asset_path('background7_mob.jpg'));
+      } 
+      100% {
+        background-image: url(asset_path('background1_mob.jpg'));
+      }  
+
+    }
 }
 
+/* Load big backgrounds */ 
+@media screen and (min-width: #{$medium-breakpoint}) {
+    
+    body::after {
+        content: url(asset_path('background7.jpg')) url(asset_path('background6.jpg')) url(asset_path('background5.jpg')) url(asset_path('background4.jpg')) url(asset_path('background3.jpg')) url(asset_path('background2.jpg')) url(asset_path('background1.jpg'));
+    }
+    
+    .gallery-header {
+        animation-name: headerImageGallery;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 40s;
+    }
+    
+    @keyframes headerImageGallery {
+      0%, 4.76%, 9.52% {
+        background-image: url(asset_path('background1.jpg'));
+      }
+      14.28%, 19.04%, 23.8% {
+        background-image: url(asset_path('background2.jpg'));
+      }
+      28.56%, 33.32%, 38.08% {
+        background-image: url(asset_path('background3.jpg'));
+      }
+      42.84%, 47.6%, 52.36% {
+        background-image: url(asset_path('background4.jpg'));
+      }
+      57.12%, 61.88%, 66.64% {
+        background-image: url(asset_path('background5.jpg'));
+      }  
+      71.4%, 76.16%, 80.92% {
+        background-image: url(asset_path('background6.jpg'));
+      }  
+      85.68%, 90.44%, 95.2% {
+        background-image: url(asset_path('background7.jpg'));
+      } 
+      100% {
+        background-image: url(asset_path('background1.jpg'));
+      }  
 
-@keyframes headerImageGallery {
-  0%, 10%, 20% {
-    background-image: url(asset_path('background1.jpg'));
-  }
-  30%, 40%, 50% {
-    background-image: url(asset_path('background2.jpg'));
-  }
-  60%, 70%, 80% {
-    background-image: url(asset_path('background3.jpg'));
-  }
-  90%, 100% {
-    background-image: url(asset_path('background4.jpg'));
-  }    
- 
+    }
 }
-
-
 
 .social-buttons {
     display: flex;

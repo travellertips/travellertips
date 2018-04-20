@@ -136,27 +136,7 @@ post-subheader-right {
     }
 }
 
-.button {
-    display: inline-block;
-    margin-bottom: 1rem;
-    line-height: normal;
-    padding: 0.5em;
-    color: rgba($main-color, 0.7);
-    background-color: rgba($main-color, 0.08);
-    border-color: rgba($main-color, 0.2);
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 0.3rem;
-    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-
-    &:hover {
-        color: rgba($main-color, 0.8);
-        text-decoration: none;
-        background-color: rgba($main-color, 0.2);
-        border-color: rgba($main-color, 0.3);
-    }    
-}
-
+.button,
 .download-button {
     display: inline-block;
     margin-bottom: 1rem;
@@ -171,10 +151,10 @@ post-subheader-right {
     transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 
     &:hover {
-        color: rgba($main-color, 0.8);
+        color: $main-color;
         text-decoration: none;
-        background-color: rgba($main-color, 0.2);
-        border-color: rgba($main-color, 0.3);
+        background-color: $main-color-background;
+        border-color: $main-color-border;
     }    
 }
 
@@ -655,6 +635,18 @@ span {
     z-index: 0;
     background: #fff;
     transition: all $transition-speed linear;
+    
+    @include huge {
+        max-width: 420px;
+    }
+    
+    @include medium {
+        max-width: 370px;
+    }
+    
+    @include small {
+        max-width: 300px;
+    }
 }
 
 #search-box:focus {
@@ -677,24 +669,28 @@ span {
     }
     
     input[type="submit"] {
-        margin-left: 20px;
-        border-radius: 20px;
-        color: rgba($main-color, 0.7);
-        background-color: rgba($main-color, 0.08);
-        border-color: rgba($main-color, 0.2);
-        border-style: solid;
-        border-width: 1px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
         height: 40px;
         padding: 0.5em 0.8em;
-        cursor: pointer;
-        
+        color: $body-text-color;
+        background-color: #fff;
+        border-color: $border-color;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 0 20px 20px 0;
+        transition: color $transition-speed, background-color $transition-speed, border-color $transition-speed;
+
         &:hover,
         &:active {
             color: rgba($main-color, 0.8);
             text-decoration: none;
             background-color: rgba($main-color, 0.2);
-            border-color: rgba($main-color, 0.3);           
-        }
+            border-color: rgba($main-color, 0.3);
+        }   
+        
     }
 }
 
@@ -708,11 +704,6 @@ span {
     padding: 0;
     
     li {
-        
-        h3 {
-           // max-width: 220px;
-            padding-right: 0.5em;
-        }
         margin: 1.5em 0;
     }
     
@@ -735,6 +726,18 @@ span {
         img {
             max-width: 250px;
             padding-right: $side-padding-small;
+        }
+        
+        @include medium {
+            display: block;
+            
+            p {
+                margin-top: 1em;
+            }
+            
+            img {
+                max-width: 100%;
+            }
         }
     }
 }
@@ -759,6 +762,7 @@ span {
         opacity: 0.5;
         background: #fff;
         z-index: 1;
+
     }
     
     .button-wrapper {
