@@ -54,25 +54,113 @@
 /* Animate background */
 
 .gallery-header {
-    background-position: center;
-    background-size: cover;
-    min-height: calc(100vh - 80px);
-    display: flex;
+    position: relative;
+    margin-bottom: 3em;
 }
 
-
-// Hack to preload all images to avoid blinking
-
-body::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
+.background-wrapper {
     overflow: hidden;
-    z-index: -1;
+    min-height: calc(100vh - 80px);
+    position: relative;
+
+    
+    > div {
+        font-size: 80px;
+        color: red;
+        
+        background-position: center;
+        background-size: cover;
+        min-height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }
 
-/* Load mobile backgrounds */ 
+.bckgr1 {
+    background-image: url(asset_path('background1.jpg'));
+}
+
+.bckgr2 {
+    background-image: url(asset_path('background2.jpg'));
+}
+
+.bckgr3 {
+    background-image: url(asset_path('background3.jpg'));
+}
+
+.bckgr4 {
+    background-image: url(asset_path('background4.jpg'));
+}
+
+.bckgr5 {
+    background-image: url(asset_path('background5.jpg'));
+}
+
+.bckgr6 {
+    background-image: url(asset_path('background6.jpg'));
+}
+
+.bckgr7 {
+    background-image: url(asset_path('background7.jpg'));
+}
+
+.bckgr8 {
+    background-image: url(asset_path('background3.jpg'));
+}
+
+@keyframes headerImageGallery {
+    0% {
+        opacity: 1;
+    }
+    6.25% {
+        opacity: 1;
+    }
+    12.5% {
+        opacity: 0;
+    }
+    93.75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.background-wrapper div:nth-of-type(1) {
+    animation-delay: 28s;
+}
+.background-wrapper div:nth-of-type(2) {
+    animation-delay: 24s;
+}
+.background-wrapper div:nth-of-type(3) {
+    animation-delay: 20s;
+}
+.background-wrapper div:nth-of-type(4) {
+    animation-delay: 16s;
+}
+.background-wrapper div:nth-of-type(5) {
+    animation-delay: 12s;
+}
+.background-wrapper div:nth-of-type(6) {
+    animation-delay: 8s;
+}
+.background-wrapper div:nth-of-type(7) {
+    animation-delay: 4s;
+}
+.background-wrapper div:nth-of-type(8) {
+    animation-delay: 0;
+}
+
+.background-wrapper div {
+    animation-name: headerImageGallery;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 32s;
+}
+
+/* Load mobile backgrounds 
 @media screen and (max-width: #{$medium-breakpoint}) {
     
     body::after {
@@ -115,13 +203,10 @@ body::after {
     }
 }
 
-/* Load big backgrounds */ 
+/* Load big backgrounds 
 @media screen and (min-width: #{$medium-breakpoint}) {
     
-    body::after {
-        content: url(asset_path('background7.jpg')) url(asset_path('background6.jpg')) url(asset_path('background5.jpg')) url(asset_path('background4.jpg')) url(asset_path('background3.jpg')) url(asset_path('background2.jpg')) url(asset_path('background1.jpg'));
-    }
-    
+
     .gallery-header {
         animation-name: headerImageGallery;
         animation-timing-function: ease-in-out;
@@ -156,7 +241,10 @@ body::after {
       }  
 
     }
+    
 }
+
+*/
 
 .social-buttons {
     display: flex;
@@ -164,20 +252,23 @@ body::after {
     justify-content: center;
     
     position: absolute;
-    top: calc(50% - 85px);
+    top: calc(50% - 120px);
     left: 4rem;
     
     @include large {
         left: 2.5rem;
+        top: calc(50% - 150px);
     }
 
     @include medium {
         left: 2rem;
+        top: calc(50% - 180px);
     }
     
     @include small {
         left: 1rem;
         transform: scale(0.8);
+        top: calc(50% - 210px);
     }    
     
     a {
@@ -220,21 +311,29 @@ body::after {
 }
 
 .site-description {
+    text-align: center;
     background: #fff;
     font-size: $large-font-size;
-    margin: -6vh auto 0;
+    position: absolute;
+    bottom: -3em;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 1.5em 2em 0;
     
     @include huge {
         max-width: 64rem;
+        min-width: 55rem;
     }
 
     @include large {
         max-width: 54rem;
+        min-width: 50rem;
+        position: static;
+        transform: none;
     }
 
     @include medium {
-        max-width: 50rem;
+        width: 100%;
         font-size: 16px;
     }
     
