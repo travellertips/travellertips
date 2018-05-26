@@ -55,7 +55,6 @@
 
 .gallery-header {
     position: relative;
-    margin-bottom: 3em;
 }
 
 .background-wrapper {
@@ -64,10 +63,7 @@
     position: relative;
 
     
-    > div {
-        font-size: 80px;
-        color: red;
-        
+    > div {        
         background-position: center;
         background-size: cover;
         min-height: 100%;
@@ -78,36 +74,77 @@
     }
 }
 
-.bckgr1 {
-    background-image: url(asset_path('background1.jpg'));
+/* Load mobile backgrounds */
+@media screen and (max-width: #{$large-breakpoint}) {
+    
+    .bckgr1 {
+        background-image: url(asset_path('background1_mob.jpg'));
+    }
+
+    .bckgr2 {
+        background-image: url(asset_path('background2_mob.jpg'));
+    }
+
+    .bckgr3 {
+        background-image: url(asset_path('background3_mob.jpg'));
+    }
+
+    .bckgr4 {
+        background-image: url(asset_path('background4_mob.jpg'));
+    }
+
+    .bckgr5 {
+        background-image: url(asset_path('background5_mob.jpg'));
+    }
+
+    .bckgr6 {
+        background-image: url(asset_path('background6_mob.jpg'));
+    }
+
+    .bckgr7 {
+        background-image: url(asset_path('background7_mob.jpg'));
+    }
+
+    .bckgr8 {
+        background-image: url(asset_path('background3_mob.jpg'));
+    }    
 }
 
-.bckgr2 {
-    background-image: url(asset_path('background2.jpg'));
-}
+/* Load desktop backgrounds */
+@media screen and (min-width: #{$large-breakpoint}) {
 
-.bckgr3 {
-    background-image: url(asset_path('background3.jpg'));
-}
+    .bckgr1 {
+        background-image: url(asset_path('background1.jpg'));
+    }
 
-.bckgr4 {
-    background-image: url(asset_path('background4.jpg'));
-}
+    .bckgr2 {
+        background-image: url(asset_path('background2.jpg'));
+    }
 
-.bckgr5 {
-    background-image: url(asset_path('background5.jpg'));
-}
+    .bckgr3 {
+        background-image: url(asset_path('background3.jpg'));
+    }
 
-.bckgr6 {
-    background-image: url(asset_path('background6.jpg'));
-}
+    .bckgr4 {
+        background-image: url(asset_path('background4.jpg'));
+    }
 
-.bckgr7 {
-    background-image: url(asset_path('background7.jpg'));
-}
+    .bckgr5 {
+        background-image: url(asset_path('background5.jpg'));
+    }
 
-.bckgr8 {
-    background-image: url(asset_path('background3.jpg'));
+    .bckgr6 {
+        background-image: url(asset_path('background6.jpg'));
+    }
+
+    .bckgr7 {
+        background-image: url(asset_path('background7.jpg'));
+    }
+
+    .bckgr8 {
+        background-image: url(asset_path('background3.jpg'));
+    }
+    
 }
 
 @keyframes headerImageGallery {
@@ -160,92 +197,6 @@
     animation-duration: 32s;
 }
 
-/* Load mobile backgrounds 
-@media screen and (max-width: #{$medium-breakpoint}) {
-    
-    body::after {
-        content: url(asset_path('background7_mob.jpg')) url(asset_path('background6_mob.jpg')) url(asset_path('background5_mob.jpg')) url(asset_path('background4_mob.jpg')) url(asset_path('background3_mob.jpg')) url(asset_path('background2_mob.jpg')) url(asset_path('background1_mob.jpg'));
-    }
-    
-    .gallery-header {
-        animation-name: headerImageGallery_mob;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-duration: 40s;
-    }
-     
-    @keyframes headerImageGallery_mob {
-      0%, 4.76%, 9.52% {
-        background-image: url(asset_path('background1_mob.jpg'));
-      }
-      14.28%, 19.04%, 23.8% {
-        background-image: url(asset_path('background2_mob.jpg'));
-      }
-      28.56%, 33.32%, 38.08% {
-        background-image: url(asset_path('background3_mob.jpg'));
-      }
-      42.84%, 47.6%, 52.36% {
-        background-image: url(asset_path('background4_mob.jpg'));
-      }
-      57.12%, 61.88%, 66.64% {
-        background-image: url(asset_path('background5_mob.jpg'));
-      }  
-      71.4%, 76.16%, 80.92% {
-        background-image: url(asset_path('background6_mob.jpg'));
-      }  
-      85.68%, 90.44%, 95.2% {
-        background-image: url(asset_path('background7_mob.jpg'));
-      } 
-      100% {
-        background-image: url(asset_path('background1_mob.jpg'));
-      }  
-
-    }
-}
-
-/* Load big backgrounds 
-@media screen and (min-width: #{$medium-breakpoint}) {
-    
-
-    .gallery-header {
-        animation-name: headerImageGallery;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-duration: 40s;
-    }
-    
-    @keyframes headerImageGallery {
-      0%, 4.76%, 9.52% {
-        background-image: url(asset_path('background1.jpg'));
-      }
-      14.28%, 19.04%, 23.8% {
-        background-image: url(asset_path('background2.jpg'));
-      }
-      28.56%, 33.32%, 38.08% {
-        background-image: url(asset_path('background3.jpg'));
-      }
-      42.84%, 47.6%, 52.36% {
-        background-image: url(asset_path('background4.jpg'));
-      }
-      57.12%, 61.88%, 66.64% {
-        background-image: url(asset_path('background5.jpg'));
-      }  
-      71.4%, 76.16%, 80.92% {
-        background-image: url(asset_path('background6.jpg'));
-      }  
-      85.68%, 90.44%, 95.2% {
-        background-image: url(asset_path('background7.jpg'));
-      } 
-      100% {
-        background-image: url(asset_path('background1.jpg'));
-      }  
-
-    }
-    
-}
-
-*/
-
 .social-buttons {
     display: flex;
     flex-direction: column;
@@ -257,18 +208,15 @@
     
     @include large {
         left: 2.5rem;
-        top: calc(50% - 150px);
     }
 
     @include medium {
         left: 2rem;
-        top: calc(50% - 180px);
     }
     
     @include small {
         left: 1rem;
         transform: scale(0.8);
-        top: calc(50% - 210px);
     }    
     
     a {
@@ -314,10 +262,8 @@
     text-align: center;
     background: #fff;
     font-size: $large-font-size;
-    position: absolute;
-    bottom: -3em;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    margin: -3em auto 0;
     padding: 1.5em 2em 0;
     
     @include huge {
@@ -328,8 +274,6 @@
     @include large {
         max-width: 54rem;
         min-width: 50rem;
-        position: static;
-        transform: none;
     }
 
     @include medium {
