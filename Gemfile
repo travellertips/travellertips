@@ -13,7 +13,6 @@ group :jekyll_plugins do
 #    gem "mini_magick"
     gem "uglifier"
     gem "jekyll-paginate"
-#    gem "jekyll-coffeescript"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

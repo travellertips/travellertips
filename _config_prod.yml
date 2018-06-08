@@ -19,8 +19,8 @@ plugins:
 defaults:
   -
     scope:
-      path: "_posts/" # an empty string here means all files in the project
-      type: "posts"
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "post"
       
