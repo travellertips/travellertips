@@ -195,8 +195,11 @@ post-subheader-right {
         h1 {
             display: block;
             position: relative;
-            padding-left: 40px;
             color: $heading-color;
+            
+            &.capsule-title {
+                padding-left: 40px; 
+            }
         }
     }
 

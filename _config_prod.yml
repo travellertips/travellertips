@@ -1,0 +1,74 @@
+title: Traveller tips website!
+email: g.polinovskyi@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Traveller tips website is a personal blog where I give some special hints and tips for travellers.
+  I try to find most interesting places during my trips for good photo and video materials. If you are a traveller and what to find the most interesting and 
+  sometimes hidden places around the Globe - this website is a great starting point.
+#baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://travellertips.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: polinovskyi
+
+# Build settings
+
+plugins:
+  - jekyll-feed
+  - jekyll-assets
+  - jekyll-sitemap
+  - jekyll-paginate
+  
+defaults:
+  -
+    scope:
+      path: "_posts/" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
+      
+environment: production
+
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+assets:
+  source_maps: false # false on JEKYLL_ENV=production
+  destination: "/assets"
+  compression: true
+  gzip: true
+  defaults:
+    js: { integrity: true } # true on JEKYLL_ENV=production
+    css: { integrity: true } # true on JEKYLL_ENV=production
+    img: { integrity: true } # true on JEKYLL_ENV=production
+  caching:
+    path: ".jekyll-cache/assets"
+    type: file # Possible values: memory, file
+    enabled: true
+  sources:
+    - _assets/bower
+    - _assets/fonts
+    - _assets/images
+    - _assets/images/general
+    - _assets/images/posts
+    - _assets/images/thumbnails650
+    - _assets/images/thumbnails320
+    - _assets/images/maps
+    - _assets/css
+    - _assets/js
+  autoprefixer:
+    browsers:
+      - "last 2 versions"
+      - "IE > 9"
+
+exclude:
+  - .bowerrc
+  - .travis.yml
+  - bin/*
+  - bower.json
+  - circle.yml
+  - README.md
+
+ga_analytics: UA-103038704-1
+
+name: 
+
+permalink: pretty
+

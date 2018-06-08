@@ -1,4 +1,4 @@
 #bash
 
 jekyll build
-bundle exec jekyll serve --livereload
+bundle exec jekyll serve --drafts --livereload
