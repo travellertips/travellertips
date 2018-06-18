@@ -9,6 +9,11 @@ cd _assets/images/posts
 ### Check if there any new images
 
 DIR_TO_CHECK='fresh'
+
+### Lowecase all files
+cd $DIR_TO_CHECK
+for i in *; do mv "$i" "$(echo $i|tr A-Z a-z)"; done
+cd ../
  
 OLD_STAT_FILE='/Users/Greg/Documents/Greg/Projects/travellertips/new_img_check.txt'
  
@@ -39,7 +44,11 @@ then
 
     ### set all images for posts to a standard size
 
-    mogrify -strip -interlace Plane -gaussian-blur 0.05 -resize 1200x675 -unsharp 0x1 -quality 75 -density 72x72 -units pixelsperinch -gravity Center -crop 1200x675+0+0 +repage *.* 
+    if [[ "$f" != *"_mix"* ]] && [[ "$f" != *"_top"* ]]
+    then
+        echo "Processing $f"
+        mogrify -strip -interlace Plane -gaussian-blur 0.03 -resize '1200' -unsharp 0x1 -quality 75 -density 72x72 -units pixelsperinch -gravity Center -crop 1200x845+0+0 +repage $f 
+    fi
 
     rm -r thumbnails650/*
 

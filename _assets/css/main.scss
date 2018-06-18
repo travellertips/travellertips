@@ -176,6 +176,17 @@ post-subheader-right {
   img {
     max-width: 100%;
   }
+    
+    figure,
+    figcaption {
+        margin: 0;
+    }
+    
+    figcaption {
+        font-style: italic;
+        font-size: 0.8em;
+        text-align: center;
+    }
 
   h1,
   h2,

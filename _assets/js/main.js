@@ -6,20 +6,24 @@ if (document.getElementById('visualization')) {
 
     function drawVisualization() {
 
-        var data = new google.visualization.DataTable();
+        var data = new google.visualization.DataTable(),
+            numOfCountries;
 
         data.addColumn('string', 'Country');
         data.addColumn('number', 'Value'); 
         data.addColumn({type:'string', role:'tooltip'});
 
         data.addRows([[{v:'DE',f:'Germany'},0, _de + ' posts']]);
-        data.addRows([[{v:'UA',f:'Ukraine'},0, _ua + ' posts']]);
+        data.addRows([[{v:'UA',f:'Ukraine'},1, _ua + ' posts']]);
+        data.addRows([[{v:'RO',f:'Romania'},2, _ro + ' posts']]);
         // v - value; f: formattedValue
+        
+        numOfCountries = data.getNumberOfRows();
 
         var options = {
             backgroundColor: {fill:'#FFFFFF', stroke:'#FFFFFF', strokeWidth:0 },
             colorAxis:  
-                {minValue: 0, maxValue: 5,  colors: ['#159957', '#159957']},
+                {minValue: 0, maxValue: (numOfCountries - 1),  colors: ['#3C8C3F', '#9ee5a0']},
             legend: 'none',	
             backgroundColor: {fill:'#FFFFFF', stroke:'#FFFFFF', strokeWidth:0 },	
             datalessRegionColor: '#F5F0E7',
