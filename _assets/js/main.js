@@ -12,10 +12,23 @@ if (document.getElementById('visualization')) {
         data.addColumn('string', 'Country');
         data.addColumn('number', 'Value'); 
         data.addColumn({type:'string', role:'tooltip'});
-
-        data.addRows([[{v:'DE',f:'Germany'},0, _de + ' posts']]);
-        data.addRows([[{v:'UA',f:'Ukraine'},1, _ua + ' posts']]);
-        data.addRows([[{v:'RO',f:'Romania'},2, _ro + ' posts']]);
+        
+        if (_de > 0) {
+            data.addRows([[{v:'DE',f:'Germany'},0, _de + ' posts']]); 
+        };
+        
+        if (_ua > 0) {
+            data.addRows([[{v:'UA',f:'Ukraine'},1, _ua + ' posts']]);
+        };
+        
+        if (_ro > 0) {
+            data.addRows([[{v:'RO',f:'Romania'},2, _ro + ' posts']]);
+        };
+        
+        if (_cz > 0) {
+            data.addRows([[{v:'CZ',f:'Czech Republic'},3, _cz + ' posts']]);
+        };
+        
         // v - value; f: formattedValue
         
         numOfCountries = data.getNumberOfRows();

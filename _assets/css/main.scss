@@ -161,6 +161,7 @@ post-subheader-right {
 .main-content {
     word-wrap: break-word;
     margin: auto;
+    min-height: calc(100vh - 320px);
 
   :first-child {
     margin-top: 0;
@@ -177,12 +178,12 @@ post-subheader-right {
     max-width: 100%;
   }
     
-    figure,
-    figcaption {
-        margin: 0;
+    figure {
+        margin: 0 0 1em 0;
     }
     
     figcaption {
+         margin: 0;
         font-style: italic;
         font-size: 0.8em;
         text-align: center;

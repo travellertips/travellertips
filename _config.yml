@@ -1,12 +1,12 @@
 title: Traveller tips website!
-email: g.polinovskyi@gmail.com
+email: info@travellertips.me
 description: > # this means to ignore newlines until "baseurl:"
-  Traveller tips website is a personal blog where I give some special hints and tips for travellers.
-  I try to find most interesting places during my trips for good photo and video materials. If you are a traveller and what to find the most interesting and 
-  sometimes hidden places around the Globe - this website is a great starting point.
+  Travellertips website is a great source with special hints and tips for travellers. We gather useful information about the place, how to get there and what budget you should count on.
+  We try to collect the most interesting places and share this information with you, dear wonderer. In some places we hide a treasure for you, go and check it! If you want to find the most interesting and 
+  sometimes hidden places around the Globe then this website is a great starting point!
 #baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://travellertips.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: polinovskyi
+url: "https://travellertips.me" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: travellertipsme
 
 # Build settings
 
@@ -66,7 +66,7 @@ exclude:
 
 ga_analytics: UA-103038704-1
 
-name: 
+name: travellertips
 
 permalink: pretty
 

@@ -51,7 +51,7 @@
                 <div class="related-posts-container">
                 
                 {% assign maxRelated = 3 %}
-                {% assign minCommonTags =  2 %}
+                {% assign minCommonTags =  1 %}
                 {% assign maxRelatedCounter = 0 %}
 
                 {% for post in site.posts %}
@@ -73,7 +73,7 @@
                         <div>
                             <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
                             {% if post.thumbnail %}
-                                <a href="{{ site.baseurl }}{{ post.url }}">{% asset {{post.thumbsmall}} alt="{{post.title}}" %}
+                                <a href="{{ site.baseurl }}{{ post.url }}">{% asset {{post.thumbsmall}} alt="{{post.title}}" %}</a>
                             {% endif %}
                         </div>
                         {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
