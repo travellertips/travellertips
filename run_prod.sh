@@ -1,4 +1,4 @@
 #bash
 
-JEKYLL_ENV=production jekyll build
-bundle exec jekyll serve --config _config_prod.yml
+JEKYLL_ENV=production bundle exec jekyll build --config _config_prod.yml
+jekyll serve

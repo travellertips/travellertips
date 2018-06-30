@@ -1,12 +1,13 @@
 title: Traveller tips website!
 email: info@travellertips.me
 description: > # this means to ignore newlines until "baseurl:"
-  Travellertips website is a great source with special hints and tips for travellers. We gather useful information about the place, how to get there and what budget you should count on.
+  Travellertips website is a great source with special hints and tips for travelers. We gather useful information about the place, how to get there and what budget you should count on.
   We try to collect the most interesting places and share this information with you, dear wonderer. In some places we hide a treasure for you, go and check it! If you want to find the most interesting and 
   sometimes hidden places around the Globe then this website is a great starting point!
 #baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://travellertips.me" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: travellertipsme
+addthis: ra-5b2f637ba8586a11
 
 # Build settings
 

@@ -88,10 +88,13 @@
 
             </div>
 
-            {% if site.disqus.shortname %}
-                {% include disqus_comments.html %}
-            {% endif %}
         </article>
+        
+        <hr>
+        
+        {% if page.comments %}
+            {% include disqus_comments.html %}
+        {% endif %}
     </main>
     
     <hr>
